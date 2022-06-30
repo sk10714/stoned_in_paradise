@@ -29,7 +29,7 @@ html(lang="zh-Hant")
                                 a(href="#") 聯絡我們
                             li 
                                 a(href="#")
-                                    img(src="public/images/shopping cart.png", alt="")
+                                    img(src="public/images/shopping cart.png", alt="shopping_cart")
                                     
         .container 
             .text-center
@@ -39,31 +39,43 @@ html(lang="zh-Hant")
                 p 如同在平凡生活中，沾染一點新奇。
                 p 將我們喜愛的樣子呈現給大家，
                 p 但願你也能困在這天堂般的美好之中。
-        #banner
+        .banner
             img(src="public/images/background_image_02.png", alt="")
-        .container.text-center 
-            h2 從生活感受找尋靈感
-            ul 
-                li 
-                    img(src="", alt="")
-                    h3 客製化的討論
-                li 
-                    img(src="", alt="")
-                    h3 選擇天然的食材
-                li 
-                    img(src="", alt="")
-                    h3 生活的溫度
-        .ig_contnet
+        .container
+            h2.text-center  從生活感受找尋靈感
+            .row
+                .col-12.col-md-4.col-lg-4
+                    img(src="public/images/discuss.jpg", alt="")
+                    h3.text-center 客製化的討論
+                .col-12.col-md-4.col-lg-4
+                    img(src="public/images/ingredients.jpg", alt="")
+                    h3.text-center 選擇天然的食材
+                .col-12.col-md-4.col-lg-4
+                    img(src="public/images/warmth.jpg", alt="")
+                    h3.text-center 生活的溫度
+        .ig_content
             .container
-                .line 
-                h2 THE JOURNEY
-                ul 
-                    li 
-                    li 
-                    li 
-                    li 
+                h2.text-center.shortunderline THE JOURNEY
+                .row
+                    .col-12.col-md-3.col-lg-3
+                        .text-content
+                            .text-center
+                                h3 Recent Posts
+                                p Every little thing
+                                p happened in 
+                                p Stoned In Paradise Studio
+                                a(href="#") READ MORE
+                    .col-12.col-md-3.col-lg-3
+                        img(src="public/images/ig_img_01.jpg", alt="")
+                        
+                    .col-12.col-md-3.col-lg-3
+                        img(src="public/images/ig_img_02.jpg", alt="")
+                        
+                    .col-12.col-md-3.col-lg-3
+                        img(src="public/images/ig_img_03.jpg", alt="")
+                        
         footer
-            .container 
+            .container.text-center
                 img(src="", alt="")
                 img(src="", alt="")
                 h6 營業時間：13:00-17:30

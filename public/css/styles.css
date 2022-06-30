@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ul, ol {
@@ -51,7 +52,7 @@ header > .container nav > ul > li > a {
 }
 
 header > .container nav > ul > li:nth-child(3) {
-  margin-right: 310px;
+  margin-right: 260px;
 }
 
 header > .container nav > ul > li:nth-child(4) {
@@ -59,7 +60,7 @@ header > .container nav > ul > li:nth-child(4) {
 }
 
 header > .container nav > ul > li:nth-child(6) {
-  margin-left: 100px;
+  margin-left: 150px;
 }
 
 header > .container nav > ul > li:hover {
@@ -84,6 +85,76 @@ header > .container nav > ul > li > a:hover {
   margin-bottom: 20px;
 }
 
+.container > h2 {
+  margin-bottom: 30px;
+}
+
+.container > .row img {
+  margin-bottom: 10px;
+}
+
+.ig_content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 460px;
+  background-image: url(../images/moroccan-flower.png);
+  background-repeat: repeat;
+}
+
+.ig_content > .container > h2 {
+  padding-top: 30px;
+}
+
+.shortunderline::before {
+  content: "";
+  width: 4rem;
+  display: block;
+  border-bottom: 0.0625rem solid;
+  margin-bottom: 1.4375rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-content {
+  height: 261px;
+  border: 6px double rgba(52, 51, 80, 0.5);
+}
+
+.ig_content > .container > .row .text-center {
+  background-color: rgba(52, 51, 80, 0.5);
+  margin: 10px;
+  color: white;
+  height: 229px;
+}
+
+.ig_content > .container > .row .text-center > h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.ig_content > .container > .row .text-center > p {
+  padding-bottom: 20px;
+}
+
+.ig_content > .container > .row .text-center > a {
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+}
+
+.ig_content > .container > .row .text-center > a:hover {
+  border: 1px solid #b6b6b6;
+  color: #b6b6b6;
+}
+
+footer {
+  background-color: #39485B;
+  color: white;
+  height: 280px;
+  padding-top: 200px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -98,4 +169,229 @@ header > .container nav > ul > li > a:hover {
 
 .text-justify {
   text-align: justify;
+}
+
+.banner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 50px auto;
+}
+
+.col-1 {
+  --num:calc(12 / 1);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-2 {
+  --num:calc(12 / 2);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-3 {
+  --num:calc(12 / 3);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-4 {
+  --num:calc(12 / 4);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-5 {
+  --num:calc(12 / 5);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-6 {
+  --num:calc(12 / 6);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-7 {
+  --num:calc(12 / 7);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-8 {
+  --num:calc(12 / 8);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-9 {
+  --num:calc(12 / 9);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-10 {
+  --num:calc(12 / 10);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-11 {
+  --num:calc(12 / 11);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-12 {
+  --num:calc(12 / 12);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+@media (min-width: 768px) {
+  .col-md-1 {
+    --num:calc(12/ 1);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-2 {
+    --num:calc(12/ 2);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-3 {
+    --num:calc(12/ 3);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-4 {
+    --num:calc(12/ 4);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-5 {
+    --num:calc(12/ 5);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-6 {
+    --num:calc(12/ 6);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-7 {
+    --num:calc(12/ 7);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-8 {
+    --num:calc(12/ 8);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-9 {
+    --num:calc(12/ 9);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-10 {
+    --num:calc(12/ 10);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-11 {
+    --num:calc(12/ 11);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-12 {
+    --num:calc(12/ 12);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-1 {
+    --num: calc(12 / 1);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-2 {
+    --num: calc(12 / 2);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-3 {
+    --num: calc(12 / 3);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-4 {
+    --num: calc(12 / 4);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-5 {
+    --num: calc(12 / 5);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-6 {
+    --num: calc(12 / 6);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-7 {
+    --num: calc(12 / 7);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-8 {
+    --num: calc(12 / 8);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-9 {
+    --num: calc(12 / 9);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-10 {
+    --num: calc(12 / 10);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-11 {
+    --num: calc(12 / 11);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-12 {
+    --num: calc(12 / 12);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
 }
