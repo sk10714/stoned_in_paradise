@@ -1,5 +1,7 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul, ol {
@@ -18,42 +20,34 @@ a {
 
 header {
   width: 100%;
+  max-width: 1440px;
   height: 680px;
   background-image: url(/public/images/background_image_01.png);
   position: relative;
+  margin: 0 auto;
 }
 
-header img {
+header > .container > .row > a > img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
-header nav {
-  display: flex;
-  justify-content: space-between;
-}
-
 header > .container nav > ul {
   display: flex;
-}
-
-header > .container nav > ul {
-  display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding-top: 100px;
 }
 
 header > .container nav > ul > li > a {
   color: white;
   font-size: 24px;
   display: block;
+  width: 100%;
+  margin-right: 80px;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.flex-space-between {
-  justify-content: space-between;
+header > .container nav > ul > li:nth-child(3) {
+  margin-right: 200px;
 }
