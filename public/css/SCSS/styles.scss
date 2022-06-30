@@ -47,16 +47,28 @@ header>.container nav>ul>li>a{
     display: block;
 }
 header>.container nav>ul>li:nth-child(3){
-    margin-right:250px;
+    margin-right:310px;
+}
+header>.container nav>ul>li:nth-child(4){
+    margin-left:0px;
+}
+header>.container nav>ul>li:nth-child(6){
+    margin-left:100px;
+}
+header>.container nav>ul>li:hover{
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+header>.container nav>ul>li>a:hover{
+    color: rgb(197, 189, 211);
 }
 
-
-// .row {
-//     display: flex;
-//     flex-wrap: wrap;
-// }
-// .flex-space-between {
-//     justify-content: space-between;
-// }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-space-between {
+    justify-content: space-between;
+}
 
 
