@@ -21,7 +21,7 @@ header {
   width: 100%;
   max-width: 1440px;
   height: 680px;
-  background-image: url(/public/images/background_image_01.png);
+  background-image: url(../images/background_image_01.png);
   position: relative;
   margin: 0 auto;
 }
@@ -81,7 +81,7 @@ header > .container nav > ul > li > a:hover {
 }
 
 .container > .text-center > p {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .text-center {
