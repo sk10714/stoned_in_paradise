@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 ul, ol {
@@ -35,19 +34,22 @@ header > .container > .row > a > img {
 
 header > .container nav > ul {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: baseline;
   padding-top: 100px;
+}
+
+header > .container nav > ul > li {
+  margin-left: 40px;
+  display: flex;
 }
 
 header > .container nav > ul > li > a {
   color: white;
   font-size: 24px;
   display: block;
-  width: 100%;
-  margin-right: 80px;
 }
 
 header > .container nav > ul > li:nth-child(3) {
-  margin-right: 200px;
+  margin-right: 250px;
 }
