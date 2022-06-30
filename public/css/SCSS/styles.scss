@@ -17,6 +17,7 @@ a{
     margin: 0 auto;
     // background-color: rgb(247, 0, 0); 
 }
+// header start
 header{
     width: 100%;
     max-width:1440px;
@@ -62,7 +63,6 @@ header>.container nav>ul>li:hover{
 header>.container nav>ul>li>a:hover{
     color: rgb(197, 189, 211);
 }
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -70,5 +70,21 @@ header>.container nav>ul>li>a:hover{
 .flex-space-between {
     justify-content: space-between;
 }
+//header end
+.container>.text-center>p{
+    margin-bottom: 28px;
+}
 
-
+// 文字相關樣式
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-justify{
+    text-align: justify;
+}
