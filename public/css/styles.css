@@ -151,8 +151,27 @@ header > .container nav > ul > li > a:hover {
 footer {
   background-color: #39485B;
   color: white;
-  height: 280px;
-  padding-top: 200px;
+  display: flex;
+}
+
+footer > .container .icon {
+  display: flex;
+  margin: 40px 0;
+  justify-content: center;
+}
+
+footer > .container > .icon a {
+  display: block;
+  padding: 0 20px;
+}
+
+footer > .container .information {
+  display: block;
+  padding-bottom: 20px;
+}
+
+footer > .container .information > h5 {
+  margin-bottom: 10px;
 }
 
 .text-center {

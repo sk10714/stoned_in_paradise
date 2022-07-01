@@ -132,9 +132,28 @@ header>.container nav>ul>li>a:hover{
 footer{
     background-color: $primary-color;
     color: white;
-    height: 280px;
-    padding-top: 200px;
+    // height: 280px;
+    // padding-top: 70px;
+    display: flex;
 }
+footer>.container .icon{
+    display: flex;
+    margin: 40px 0;
+    justify-content: center;
+
+}
+footer>.container>.icon a{
+    display: block;
+    padding: 0 20px;
+}
+footer>.container .information{
+    display: block;
+    padding-bottom: 20px;
+}
+footer>.container .information>h5{
+    margin-bottom: 10px;
+}
+
 //footer end
 
 // 文字相關樣式
