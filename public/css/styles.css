@@ -152,6 +152,9 @@ footer {
   background-color: #39485B;
   color: white;
   display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 footer > .container .icon {
