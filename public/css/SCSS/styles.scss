@@ -43,40 +43,57 @@ header>.container>.row>h1>a{
 
 @media (max-width:767px) {
     header{
-        background-image: url(../images/background_image_md_1.png);
         position: relative;
+        background-image: url(../images/background_image_md_1.png); 
     }
-    nav{
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        display: none;
-    }
-    nav>ul>li{
-        line-height: 60px;
-    }
-    nav>ul>li>a{
-        text-align: center;
-        display: block;
-        background-color: rgb(86, 86, 86);        
-    }
-    .icon-menu{
-        width: 15%;
-        display: block;
-        background-color: #fff;
-        color:black;
-        line-height: 60px;
-        text-align: center;
-    }
-    header{
-        position: relative;
+    header > .container > .row{
+        display:flex;
+        justify-content: space-around;
+        padding-top: 30px;;
     }
     header > .container nav{
         width: 100%;
         position: absolute;
-        top: 60px;
-        background-color: black;
+        top: 250px;
+        background-color: rgba(0, 0, 0, 0.252);
+        margin: 0; 
+    }
+    // nav{
+    //     position: absolute;
+    //     width: 100%;
+    //     top: 0;
+    //     left: 0;
+    //     display: none;
+    // }
+    // nav>ul>li{
+    //     line-height: 60px;
+    // }
+    nav>ul>li{
+        margin: 15px;
+    }
+    nav>ul>li>a{
+        text-align: center;
+        display: block;
+        color: white;
+        font-size: 24px;
+        padding: 5px;
+        // background-color: rgb(86, 86, 86);      
+    }
+    nav>ul>li>a:hover{
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+    nav>ul>li>a>img{
+        max-width: 50px;
+    }
+    .icon-menu{
+        width: 30%;
+        display: block;
+        // background-color: #fff;
+        color: white;
+        line-height: 200px;
+        text-align: center;
+        border: 6px double white;
+        font-size: 36px;
     }
 }
 @media (min-width: 768px) {
@@ -96,39 +113,39 @@ header>.container>.row>h1>a{
       .display-md-flex {
         display: flex;
       }
-}
-header > .container nav > ul {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    padding-top: 100px;
-    // padding-right:10px;
-}
-header>.container nav>ul>li{
-    margin-left: 40px;
-    display: flex;
-}
-header>.container nav>ul>li>a{
-    color: white;
-    font-size: 24px;
-    display: block;
-}
-header>.container nav>ul>li:nth-child(3){
-    margin-right:260px;
-}
-header>.container nav>ul>li:nth-child(4){
-    margin-left:0px;
-}
-header>.container nav>ul>li:nth-child(6){
-    margin-left:150px;
-}
-header>.container nav>ul>li:hover{
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgb(255, 255, 255);
-}
-header>.container nav>ul>li>a:hover{
-    color: rgb(197, 189, 211);
-}
+      header > .container nav > ul {
+          display: flex;
+          justify-content: center;
+          align-items: baseline;
+          padding-top: 100px;
+          // padding-right:10px;
+      }
+      header>.container nav>ul>li{
+          margin-left: 40px;
+          display: flex;
+      }
+      header>.container nav>ul>li>a{
+          color: white;
+          font-size: 24px;
+          display: block;
+      }
+      header>.container nav>ul>li:nth-child(3){
+          margin-right:260px;
+      }
+      header>.container nav>ul>li:nth-child(4){
+          margin-left:0px;
+      }
+      header>.container nav>ul>li:nth-child(6){
+          margin-left:150px;
+      }
+      header>.container nav>ul>li:hover{
+          padding-bottom: 10px;
+          border-bottom: 1px solid rgb(255, 255, 255);
+      }
+    }
+    header>.container nav>ul>li>a:hover{
+        color: rgb(197, 189, 211);
+    }
 .row {
     display: flex;
     flex-wrap: wrap;
