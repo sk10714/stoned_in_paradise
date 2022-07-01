@@ -19,20 +19,87 @@ a {
 }
 
 header {
+  background-image: url(../images/background_image_01.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   width: 100%;
   max-width: 1440px;
-  height: 680px;
-  background-image: url(../images/background_image_01.png);
   position: relative;
   margin: 0 auto;
+  padding-bottom: 580px;
 }
 
-header > .container > .row > a > img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+header > .container > .row > h1 > a {
+  display: block;
 }
 
+.flex-space-between {
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  header {
+    background-image: url(../images/background_image_md_1.png);
+    position: relative;
+  }
+
+  nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  nav > ul > li {
+    line-height: 60px;
+  }
+
+  nav > ul > li > a {
+    text-align: center;
+    display: block;
+    background-color: #565656;
+  }
+
+  .icon-menu {
+    width: 15%;
+    display: block;
+    background-color: #fff;
+    color: black;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  header {
+    position: relative;
+  }
+
+  header > .container nav {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    background-color: black;
+  }
+}
+@media (min-width: 768px) {
+  header > .container > .row > h1 > a > img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .display-md-none {
+    display: none;
+  }
+
+  .display-md-block {
+    display: block;
+  }
+
+  .display-md-flex {
+    display: flex;
+  }
+}
 header > .container nav > ul {
   display: flex;
   justify-content: center;
@@ -81,23 +148,36 @@ header > .container nav > ul > li > a:hover {
   justify-content: space-between;
 }
 
+header > .container > .row > nav > ul > li > a > img {
+  margin-bottom: 0;
+}
+
 .container > .text-center > p {
   margin-bottom: 20px;
+}
+
+.banner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 50px auto;
 }
 
 .container > h2 {
   margin-bottom: 30px;
 }
 
-.container > .row img {
-  margin-bottom: 10px;
+.img-wrap img {
+  transition: all 0.5s;
+}
+
+.container > .row > .col-12 h3 {
+  margin-top: 20px;
 }
 
 .ig_content {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  height: 460px;
   background-image: url(../images/moroccan-flower.png);
   background-repeat: repeat;
 }
@@ -117,7 +197,6 @@ header > .container nav > ul > li > a:hover {
 }
 
 .text-content {
-  height: 261px;
   border: 6px double rgba(52, 51, 80, 0.5);
 }
 
@@ -193,10 +272,22 @@ footer > .container .information > h5 {
   text-align: justify;
 }
 
-.banner {
+.img-fluid {
   width: 100%;
-  max-width: 1440px;
-  margin: 50px auto;
+}
+
+.img-wrap {
+  display: block;
+  position: relative;
+}
+
+.img-overlay {
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.img-wrap img:hover {
+  transform: scale(1.5);
 }
 
 .col-1 {
