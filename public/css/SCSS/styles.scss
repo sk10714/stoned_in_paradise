@@ -57,6 +57,7 @@ header>.container>.row>h1>a{
         top: 250px;
         background-color: rgba(0, 0, 0, 0.252);
         margin: 0; 
+        display: none;
     }
     // nav{
     //     position: absolute;
@@ -177,9 +178,9 @@ header>.container>.row>nav>ul>li>a>img{
 .img-wrap img{
     transition: all 0.5s;
 }
-.container>.row>.col-12 h3{
-    margin-top: 20px;
-}
+// .container>.row>.col-12 h3{
+//     margin-top: 20px;
+// }
     .ig_content{
         width: 100%;
     max-width: 1440px;
