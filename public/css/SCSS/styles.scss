@@ -433,6 +433,14 @@ footer>.container .information>h5{
         backdrop-filter: blur(2px);
     }
 }
+@media (max-width:767px) {
+    .img-overlay-2>a h3{
+        display: none;
+    }
+    .img-overlay-2>a h4{
+        display: none;
+    }
+}
 
 @for $i from 1 through 12{
     .col-#{$i}{

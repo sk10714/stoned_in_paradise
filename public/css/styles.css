@@ -440,6 +440,15 @@ footer > .container .information > h5 {
     backdrop-filter: blur(2px);
   }
 }
+@media (max-width: 767px) {
+  .img-overlay-2 > a h3 {
+    display: none;
+  }
+
+  .img-overlay-2 > a h4 {
+    display: none;
+  }
+}
 .col-1 {
   --num:calc(12 / 1);
   width: calc(100% / var(--num) - 30px);
