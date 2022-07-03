@@ -253,35 +253,61 @@ header > .container > .row > nav > ul > li > a > img {
 
 .text-content {
   border: 6px double rgba(52, 51, 80, 0.5);
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .ig_content > .container > .row .text-center {
   background-color: rgba(52, 51, 80, 0.5);
+  width: 100%;
   margin: 10px;
   color: white;
-  height: 229px;
 }
 
-.ig_content > .container > .row .text-center > h3 {
-  padding-top: 20px;
-  padding-bottom: 10px;
+.text-content h3 {
+  margin: 15px 0;
 }
 
-.ig_content > .container > .row .text-center > p {
-  padding-bottom: 20px;
+.text-content p {
+  margin: 15px 0;
 }
 
-.ig_content > .container > .row .text-center > a {
+.button {
+  width: 60%;
+  margin-top: 22px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ig_content > .container > .row .text-center a {
+  display: block;
   border: 1px solid white;
   color: white;
-  padding: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
-.ig_content > .container > .row .text-center > a:hover {
+.ig_content > .container > .row .text-center a:hover {
   border: 1px solid #b6b6b6;
   color: #b6b6b6;
 }
 
+@media (max-width: 767px) {
+  .text-center h3 {
+    margin: 30px auto;
+    font-size: 20px;
+  }
+
+  .text-center p {
+    margin: 40px auto;
+    font-size: 20px;
+  }
+
+  .ig_content > .container > .row .text-center a {
+    margin-bottom: 50px;
+  }
+}
 footer {
   background-color: #39485B;
   color: white;
