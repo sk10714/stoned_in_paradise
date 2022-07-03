@@ -206,6 +206,16 @@ header>.container>.row>h1>a{
 header>.container>.row>nav>ul>li>a>img{
     margin-bottom: 0;
 }
+// header>.container>.title{
+//     position: relative;
+// }
+header>.container>.title>h2{
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 300px;
+}
 // ===========================================================
 // ================== header end =============================
 // ===========================================================
@@ -222,17 +232,30 @@ header>.container>.row>nav>ul>li>a>img{
 .container > h2{
     margin-bottom: 30px;
 }
-// .container > .row  img{
-//         margin-bottom: 10px;
-//     }
 .img-wrap img{
     transition: all 0.5s;
 }
-// .container>.row>.col-12 h3{
-//     margin-top: 20px;
-// }
-    .ig_content{
-        width: 100%;
+article{
+    border: 3px dashed $primary-color;
+    padding: 20px;
+    display: flex;
+}
+.left{
+    margin-right: 20px;
+}
+article h3{
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+article p{
+    line-height: 2em;
+}
+article.boxhight{
+    padding-bottom: 83px;
+}
+
+.ig_content{
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     // height: 460px;
@@ -278,14 +301,6 @@ header>.container>.row>nav>ul>li>a>img{
     margin-left: auto;
 }
 
-
-// .ig_content>.container>.row .text-center>h3{
-//     padding-top: 20px;
-//     padding-bottom: 10px;
-// }
-// .ig_content>.container>.row .text-center>p{
-//     padding-bottom: 20px;
-// }
 .ig_content>.container>.row .text-center a{
     display: block;
     border: 1px solid white;
@@ -310,7 +325,9 @@ header>.container>.row>nav>ul>li>a>img{
         margin-bottom: 50px;
     }
 }
-
+.logo img{
+    margin: 0 auto;
+}
 //content end
 //footer start
 footer{
