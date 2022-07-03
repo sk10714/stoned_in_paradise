@@ -380,8 +380,58 @@ footer>.container .information>h5{
     height: 349.99px;
     margin-bottom: 10px;
 }
-.img-wrap .img-fluid:hover{
+.img-wrap>.img-overlay>.img-fluid:hover{
     transform: scale(1.5);
+}
+@media (min-width: 768px) {
+    .img-overlay-2{
+        position: relative;
+        overflow: hidden;
+        height: 349.99px;
+        margin-bottom: 10px;
+    }
+    .img-overlay-2>a h3{
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 126.5px;
+        transform: translateX(-50%);
+        color: white;
+    }
+    .img-overlay-2>a h4{
+        display: none;
+        position: absolute;
+        font-size: 16px;
+        top: 130px;
+        left: 126.5px;
+        transform: translateX(-50%);
+        color: white;
+    }
+    .img-overlay-2>a:hover h3{
+        display: block;
+        position: absolute;
+        top: 90px;
+        left: 126.5px;
+        transform: translateX(-50%);
+        color: white;
+    }
+    .img-overlay-2>a:hover h4{
+        display: block;
+        position: absolute;
+        font-size: 16px;
+        top: 130px;
+        left: 126.5px;
+        transform: translateX(-50%);
+        color: white;
+    }
+    .img-overlay-2>a:hover .blur{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 255px;
+        height: 253px;
+        backdrop-filter: blur(2px);
+    }
 }
 
 @for $i from 1 through 12{
