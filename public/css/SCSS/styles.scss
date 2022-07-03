@@ -51,13 +51,16 @@ header>.container>.row>h1>a{
         justify-content: space-around;
         padding-top: 30px;;
     }
-    header > .container nav{
+    nav{
         width: 100%;
         position: absolute;
         top: 250px;
         background-color: rgba(0, 0, 0, 0.252);
         margin: 0; 
         display: none;
+    }
+    nav.active{
+        display: block;
     }
     // nav{
     //     position: absolute;
@@ -95,6 +98,52 @@ header>.container>.row>h1>a{
         text-align: center;
         border: 6px double white;
         font-size: 36px;
+
+    }
+    .icon-menu  > span{
+        width: 80%;
+        display: block;
+        border-bottom: 3px solid #fff;
+        height: 40px;
+        margin-top: 50px;
+        // margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    .icon-menu span:before{
+        content:" ";
+        width: 100%;
+        display: block;
+        border-bottom: 3px solid #fff;
+        // margin-bottom: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+    }
+    .icon-menu span:after{
+        content:"";
+        width: 100%;
+        display: block;
+        border-bottom: 3px solid #fff;
+        // margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        bottom: -40px;
+    }
+    .icon-menu span.active:before{
+        transform: rotate(45deg);
+        top: 40px;
+        transition: transform .3s;
+    }
+    .icon-menu span.active:after{
+        transform: rotate(-45deg);
+        bottom: -5px;
+        transition: transform .3s;
+    }
+    .icon-menu span.active{
+        border-bottom: 3px
     }
 }
 @media (min-width: 768px) {
@@ -163,6 +212,7 @@ header>.container>.row>nav>ul>li>a>img{
 .container>.text-center>p{
     margin-bottom: 20px;
 }
+
 .banner{
     width: 100%;
     max-width:1440px;
@@ -276,15 +326,28 @@ footer>.container .information>h5{
 .img-fluid{
     width: 100%;
 }
+.img-icon{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:-40%;
+}
+.img-overlay:hover .img-icon{
+    top:35%
+}
+
 .img-wrap{
     display:block;
     position: relative;
 }
 .img-overlay{
+    position: relative;
     overflow: hidden;
     border-radius: 5px;
+    height: 349.99px;
+    margin-bottom: 10px;
 }
-.img-wrap img:hover{
+.img-wrap .img-fluid:hover{
     transform: scale(1.5);
 }
 
