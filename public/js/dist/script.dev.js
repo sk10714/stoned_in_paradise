@@ -19,7 +19,7 @@ if (windowWidth >= 768) {
 } else {
   //小於768執行
   $('#btn-nav-switch').on('click', function () {
-    $('nav').toggleClass('acitve');
+    $('nav').toggleClass('active');
     $('span').toggleClass('active');
   }); //btn-nav-switch end
 
