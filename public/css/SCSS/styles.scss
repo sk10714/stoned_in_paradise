@@ -17,6 +17,25 @@ a{
     margin: 0 auto;
     // background-color: rgb(247, 0, 0); 
 }
+.margin-top-30{
+    margin-top: 30px;
+}
+.margin-bottom-30{
+    margin-bottom: 30px;
+}
+.padding-bottom-30{
+    padding-bottom: 30px;
+}
+.margin-top-bottom-10{
+    margin: 10px auto;
+}
+.border{
+    border: 1px solid black;
+}
+.border-dotted{
+    border: 3px dotted black;
+}
+
 // ===========================================================
 // ==================header start=============================
 // ===========================================================
@@ -96,7 +115,7 @@ header>.container>.row>h1>a{
         color: white;
         line-height: 200px;
         text-align: center;
-        border: 6px double white;
+        // border: 6px double white;
         font-size: 36px;
 
     }
@@ -215,6 +234,11 @@ header>.container>.title>h2{
     left: 50%;
     transform: translateX(-50%);
     top: 300px;
+}
+@media (max-width:767px) {
+    header>.container>.title>h2{
+        top:200px
+    }
 }
 // ===========================================================
 // ================== header end =============================
@@ -376,6 +400,14 @@ footer>.container .information>h5{
 .img-fluid{
     width: 100%;
 }
+.img-fluid-2{
+    width: 70%;
+    margin: 0 auto;
+}
+.img-fluid-3{
+    width: 30%;
+    margin: 0 auto;
+}
 .img-icon{
     position: absolute;
     left: 50%;
@@ -400,18 +432,16 @@ footer>.container .information>h5{
 .img-wrap>.img-overlay>.img-fluid:hover{
     transform: scale(1.5);
 }
+
 @media (min-width: 768px) {
     .img-overlay-2{
         position: relative;
         overflow: hidden;
-        height: 349.99px;
         margin-bottom: 10px;
     }
     .img-overlay-2>a h3{
         display: none;
         position: absolute;
-        top: 100px;
-        left: 126.5px;
         transform: translateX(-50%);
         color: white;
     }
@@ -419,16 +449,14 @@ footer>.container .information>h5{
         display: none;
         position: absolute;
         font-size: 16px;
-        top: 130px;
-        left: 126.5px;
         transform: translateX(-50%);
         color: white;
     }
     .img-overlay-2>a:hover h3{
         display: block;
         position: absolute;
-        top: 90px;
-        left: 126.5px;
+        top: 30%;
+        left: 50%;
         transform: translateX(-50%);
         color: white;
     }
@@ -436,8 +464,8 @@ footer>.container .information>h5{
         display: block;
         position: absolute;
         font-size: 16px;
-        top: 130px;
-        left: 126.5px;
+        top: 40%;
+        left: 50%;
         transform: translateX(-50%);
         color: white;
     }
@@ -445,8 +473,8 @@ footer>.container .information>h5{
         position: absolute;
         top: 0;
         left: 0;
-        width: 255px;
-        height: 253px;
+        width: 100%;
+        height: 100%;
         backdrop-filter: blur(2px);
     }
 }
@@ -484,4 +512,20 @@ footer>.container .information>h5{
             margin: 0px 15px 40px 15px;
         }
     }
+}
+.container>.row>.col-12>.row{
+    justify-content: center;
+    
+}
+.container>.row>.col-12>.row>.display-md-flex{
+    justify-content: space-around;
+    width: 60%;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+.container>.row>.col-12>.row>.display-md-flex>.img-fluid-3{
+    width: 10%;
+}
+.container>.row>.col-12>.row>.display-md-flex>.color-white{
+    color: white;
 }

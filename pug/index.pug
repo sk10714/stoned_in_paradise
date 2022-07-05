@@ -43,7 +43,9 @@ html(lang="zh-Hant")
                 p 將我們喜愛的樣子呈現給大家，
                 p 但願你也能困在這天堂般的美好之中。
         .banner
-            img.img-fluid(src="public/images/background_image_02.png", alt="")
+            picture
+                source(srcset="public/images/background_image_02.png" media="(min-width: 767px)")   
+                img.img-fluid(src="public/images/background_image_md_2.png")
         .container
             h2.text-center  從生活感受找尋靈感
             .row
