@@ -35,7 +35,11 @@ a{
 .border-dotted{
     border: 3px dotted black;
 }
-
+@media (min-width:768px){
+    .order-md-1{
+        order:-1;
+    }
+}
 // ===========================================================
 // ==================header start=============================
 // ===========================================================
@@ -277,7 +281,48 @@ article p{
 article.boxhight{
     padding-bottom: 83px;
 }
+//process頁面的製作方式 start
+@media (min-width: 768px) {
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+.product-title{
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.product-section-1>.container>.row>.col-md-6{
+    margin: 15px;
+    padding-left: 80px;
+}
+.product-section-2>.container>.row>.col-md-6{
+    margin: 15px;
+    padding-left: 80px;
 
+}
+.product-section-3>.container>.row>.col-md-6{
+    margin: 15px;
+    padding-left: 80px;
+}
+section>.container>.row{
+    border: 1px solid $primary-color;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.product-section-1 .row{
+    align-items: center;
+}
+.product-section-2 .row{
+    align-items: center;
+}
+.product-section-3 .row{
+    align-items: center;
+}
+}
+//process頁面的製作方式 end
 .ig_content{
     width: 100%;
     max-width: 1440px;

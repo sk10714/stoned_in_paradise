@@ -42,6 +42,11 @@ a {
   border: 3px dotted black;
 }
 
+@media (min-width: 768px) {
+  .order-md-1 {
+    order: -1;
+  }
+}
 header {
   background-image: url(../images/background_image_01.png);
   background-size: 100%;
@@ -288,6 +293,54 @@ article.boxhight {
   padding-bottom: 83px;
 }
 
+@media (min-width: 768px) {
+  .position-relative {
+    position: relative;
+  }
+
+  .position-absolute {
+    position: absolute;
+  }
+
+  .product-title {
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+
+  .product-section-1 > .container > .row > .col-md-6 {
+    margin: 15px;
+    padding-left: 80px;
+  }
+
+  .product-section-2 > .container > .row > .col-md-6 {
+    margin: 15px;
+    padding-left: 80px;
+  }
+
+  .product-section-3 > .container > .row > .col-md-6 {
+    margin: 15px;
+    padding-left: 80px;
+  }
+
+  section > .container > .row {
+    border: 1px solid #39485B;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+
+  .product-section-1 .row {
+    align-items: center;
+  }
+
+  .product-section-2 .row {
+    align-items: center;
+  }
+
+  .product-section-3 .row {
+    align-items: center;
+  }
+}
 .ig_content {
   width: 100%;
   max-width: 1440px;
