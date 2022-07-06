@@ -65,4 +65,78 @@ $('.faq-title').click(function (e) {
   $(this).parent().siblings().find('.faq-title-p').slideUp();
   $(this).parent().siblings().find('.faq-title').removeClass('text-title_color');
   $(this).parent().siblings().find('.btn-faq').removeClass('open');
+}); //輪播
+
+$('.exterior-child').prepend($('.exterior-child>img').last().clone());
+$('.exterior-child').append($('.exterior-child>img').eq(1).clone());
+var currentNum = 1;
+var parentWidth = $('.exterior').width();
+var imgLength = $('.exterior-child>img').length; //子層個數
+
+var childTotalWidth = parentWidth * imgLength; //父層寬度*子層個數
+
+$('.exterior-child').css({
+  'margin-left': -parentWidth * currentNum
 });
+$('.exterior-child').width(childTotalWidth); //子層總寬 ＝ 父層寬度*子層個數（進到畫面讀一次）
+
+$('.exterior-child>img').width(parentWidth); //子層下的圖片寬 = 父層寬度
+
+for (var i = 0; i < imgLength - 3; i++) {
+  $('.indicator>li.active').after('<li></li>');
+}
+
+$(window).resize(function () {
+  arentWidth = $('.exterior').width();
+  childTotalWidth = parentWidth * imgLength;
+  $('.exterior-child').css({
+    'margin-left': -parentWidth * currentNum
+  });
+  $('..exterior-child').width(childTotalWidth);
+  $('..exterior-child>img').width(parentWidth);
+}); //window resize end 
+
+$('.right-arrow').on('click', function () {
+  if (currentNum == imgLength - 1) {} else {
+    currentNum = currentNum + 1;
+    common();
+  }
+}); //.right-arrow end
+
+$('.left-arrow').on('click', function () {
+  if (currentNum == 0) {} else {
+    currentNum = currentNum - 1;
+    common();
+  } //if currentNum == 1 end
+
+}); //.left-arrow end
+
+$('.indicator>li').on('click', function () {
+  currentNum = $(this).index() + 1;
+  common();
+}); //.indiactor>li end
+
+function common() {
+  $('.child').animate({
+    'margin-left': -parentWidth * currentNum
+  }, function () {
+    if (currentNum == imgLength - 1) {
+      currentNum = 1;
+    }
+
+    if (currentNum == 0) {
+      currentNum = imgLength - 2;
+    }
+
+    $('.child').css({
+      'margin-left': -parentWidth * currentNum
+    });
+    $('.indicator>li').eq(currentNum - 1).addClass('active');
+    $('.indicator>li').eq(currentNum - 1).siblings().removeClass('active');
+  }); //callback end           
+} // common() end
+
+
+setInterval(function () {
+  $('.right-arrow').click();
+}, 3000);

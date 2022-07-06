@@ -283,6 +283,65 @@ article p{
 article.boxhight{
     padding-bottom: 83px;
 }
+//about start
+.exterior{
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.exterior-child{
+    font-size: 0;
+}
+.exterior img{
+    width: 100%;
+}
+.left-arrow, .right-arrow{
+    position: absolute;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 40px;
+    height: 100%;
+    top: 0px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black
+}
+.left-arrow{
+    left:0;
+}
+.right-arrow{
+    right: 0;
+}
+.indicator{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    // top:50%;
+    transform: translateX(-50%);
+}
+.indicator>li{
+    width: 10px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.indicator>li:last-child{
+    margin-right: 0;
+}
+.indicator>li.active{
+    background-color: tomato;
+}
+//about end
 //process頁面的製作方式 start
 @media (min-width: 768px) {
 .position-relative{
