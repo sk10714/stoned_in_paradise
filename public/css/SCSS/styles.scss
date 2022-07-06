@@ -198,11 +198,13 @@ header>.container>.row>h1>a{
       header>.container nav>ul>li{
           margin-left: 40px;
           display: flex;
+          border-bottom: 1px solid transparent;
       }
       header>.container nav>ul>li>a{
           color: white;
           font-size: 24px;
           display: block;
+          
       }
       header>.container nav>ul>li:nth-child(3){
           margin-right:260px;
@@ -214,7 +216,7 @@ header>.container>.row>h1>a{
           margin-left:150px;
       }
       header>.container nav>ul>li:hover{
-          padding-bottom: 10px;
+        //   padding-bottom: 10px;
           border-bottom: 1px solid rgb(255, 255, 255);
       }
     }

@@ -197,6 +197,7 @@ header > .container > .row > h1 > a {
   header > .container nav > ul > li {
     margin-left: 40px;
     display: flex;
+    border-bottom: 1px solid transparent;
   }
 
   header > .container nav > ul > li > a {
@@ -218,7 +219,6 @@ header > .container > .row > h1 > a {
   }
 
   header > .container nav > ul > li:hover {
-    padding-bottom: 10px;
     border-bottom: 1px solid white;
   }
 }

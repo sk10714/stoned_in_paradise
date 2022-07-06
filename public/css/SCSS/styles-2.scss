@@ -182,6 +182,7 @@ header>.container>.row>h1>a{
       header>.container nav>ul>li{
           margin-left: 40px;
           display: flex;
+          border-bottom: 1px solid transparent;
       }
       header>.container nav>ul>li>a{
           color: white;
@@ -198,7 +199,7 @@ header>.container>.row>h1>a{
           margin-left:150px;
       }
       header>.container nav>ul>li:hover{
-          padding-bottom: 10px;
+        //   padding-bottom: 10px;
           border-bottom: 1px solid rgb(255, 255, 255);
       }
       .top-bar>.container>.row{
@@ -255,6 +256,30 @@ header>.container>.title>h2{
     margin-bottom: 50px;
 }
 
+.s1>.row>.col-12{
+    position: relative;
+    overflow: hidden;
+}
+.s1>.row>.col-12:hover p{
+    bottom: 0;
+}
+.s1 p{
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    transition: all .5s;
+    height: 100%;
+    line-height: 100%;
+}
+.s1>.row img{
+    display: block;
+    transition: all .5s;
+}
+.s1>.row>.col-12:hover img{
+    transform: scale(1.2);
+}
 
 
 
