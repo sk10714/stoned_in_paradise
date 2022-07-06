@@ -4,7 +4,7 @@ html(lang="zh-Hant")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title 發光的石頭 | 蛋糕色彩
+        title 發光的石頭|訂購流程
         link(rel='stylesheet' href='public/css/styles.css')
 
 
@@ -34,36 +34,21 @@ html(lang="zh-Hant")
                                 a(href="shopping_list.html")
                                     img.img-fluid(src="public/images/shopping cart.png", alt="shopping_cart")
                 .title
-                    h2 FRESH CREAM CAKE
-        .container
-            h2.text-center 蛋糕色彩
-            .row.text-center
-                .col-12.col-md-6.col-lg-6.border-dotted
-                    h2.margin-top-bottom-10 天然食材調色
-                    p.margin-top-bottom-10 天然食物原色、避免色彩暈染
-                    p.margin-top-bottom-10 蛋糕顏色彩參考
-                    .color-box.margin-top-bottom-10
-                        .color-chart
-                            .circle.color-1
-                            p 白色
-                        .color-chart
-                            .circle.color-2
-                            p 褐色(巧克力、培茶) 
-                        .color-chart                       
-                            .circle.color-3
-                            p 玫瑰色
-                        .color-chart
-                            .circle.color-4
-                            p 草綠色(抹茶、四季春)                  
-                .col-12.col-md-6.col-lg-6.border-dotted
-                    h2.margin-top-bottom-10 食用色素調色
-                    p.margin-top-bottom-10 使用純動物鮮奶油製作調色暈染
-                    p.margin-top-bottom-10 現象為正常，色彩越飽和越容易暈染，蛋糕放至
-                    p.margin-top-bottom-10 隔日現象越明顯，可接受再選擇
-                    p.margin-top-bottom-10 (指定色彩可製作接近、無法一模一樣)
-                    img.img-fluid-4.margin-top-bottom-10(src="public/images/palette.png", alt="")
-            h2.text-center 參考照片
-
+                    h2 CONTACT US
+        .container  
+            .row 
+                .col-12.col-md-6.offset-md-3
+                    form.form(action="javascript;:")
+                        h2.mb-1 How can we help you?
+                        .input-group
+                            input.input-primary(type="text" placeholder="Name")
+                            input.input-primary(type="text" placeholder="E-mail")
+                        .input-group 
+                            input.input-primary.input-width(type="text" placeholder="Subject")
+                        .input-group
+                            input.input-primary.input-width.input-height(type="text" placeholder="Message...")
+                        .input-group 
+                            input.input-primary(type="submit" value="Send")
         .ig_content
             .container
                 h2.text-center.shortunderline THE JOURNEY

@@ -40,6 +40,8 @@ a{
         order:-1;
     }
 }
+
+
 // ===========================================================
 // ==================header start=============================
 // ===========================================================
@@ -364,12 +366,106 @@ section>.container>.row{
 }
 
 //cake頁面 end
+//faq頁面 start
+.faq-list {
+    padding: 16px 24px;
+    background-color: #F0F0F0;
+    -webkit-box-shadow: 0px 2px 10px rgba(48, 48, 48, 0.1);
+            box-shadow: 0px 2px 10px rgba(48, 48, 48, 0.1);
+    cursor: pointer;
+    margin-bottom: 48px;
+    border-radius: 4px;
+}
+  
+  .faq-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 18px;
+}
+.faq-title-p {
+    padding-top: 24px;
+    display: none;
+    color: rgba(22, 26, 20, 0.7);
+  }
+  .faq-title_p {
+    padding-top: 24px;
+    display: none;
+    color: rgba(22, 26, 20, 0.7);
+}
+  
+.btn-faq {
+    border: none;
+    width: 24px;
+    height: 24px;
+    // background-color: #F0F0F0;
+    position: relative;
+    cursor: pointer;
+  }
+  .btn-faq::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: $primary-color;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  .btn-faq::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: $primary-color;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  .btn-faq.open::after {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
 
+//faq頁面 end
+//form strat
+.input-primary{
+    border: 1px solid $primary-color;
+    width: 49%;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 5px auto;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.input-width{
+    width:99%;
+}
+.input-height{
+    line-height: 100px;
+}
+input[type="submit"]{
+    padding:5px 15px; 
+    background: rgb(182, 179, 193); 
+    border:0 none;
+    cursor:pointer;
+}
+//form end
 .ig_content{
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    // height: 460px;
     background-image: url(../images/moroccan-flower.png);
     background-repeat: repeat;
 }
@@ -386,7 +482,6 @@ section>.container>.row{
     margin-right: auto;
 }
 .text-content{
-    // height: 261px;
     border: 6px double rgba(52, 51, 80, 0.50);
     display: flex;
     width: 100%;
@@ -397,7 +492,6 @@ section>.container>.row{
     width: 100%;
     margin: 10px;
     color: white;
-    // height: 229px;
 }
 .text-content h3{
     margin: 15px 0;
@@ -603,6 +697,16 @@ footer>.container .information>h5{
         }
     }
 }
+// 左邊界位移
+@media (min-width:768px){
+    @for $i from 1 through 12 {
+        
+        .offset-md-#{$i}{
+            --ml-num: calc(12 / #{$i});
+            margin-left: calc(100% / var(--ml-num));
+        }
+    }
+} //ml 768 end
 .container>.row>.col-12>.row{
     justify-content: center;
     

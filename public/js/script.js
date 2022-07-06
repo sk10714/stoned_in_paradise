@@ -51,3 +51,13 @@ $(window).resize(function(){
         })//nav>ul>li end
     }//windowWith>=768 end
 })//window resize end
+
+//faq
+$('.faq-title').click(function(e){
+    $(this).find('.btn-faq').toggleClass('open');
+    $(this).siblings('.faq-title-p').slideToggle();
+    $(this).toggleClass('text-title_color');
+    $(this).parent().siblings().find('.faq-title-p').slideUp();
+    $(this).parent().siblings().find('.faq-title').removeClass('text-title_color');
+    $(this).parent().siblings().find('.btn-faq').removeClass('open');
+})
