@@ -18,6 +18,14 @@ a {
   margin: 0 auto;
 }
 
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
 header {
   background-image: url(../images/background_image_01.png);
   background-size: 100%;
@@ -26,7 +34,7 @@ header {
   max-width: 1440px;
   position: relative;
   margin: 0 auto;
-  padding-bottom: 580px;
+  padding-bottom: 30px;
 }
 
 header > .container > .row > h1 > a {
@@ -158,11 +166,15 @@ header > .container > .row > h1 > a {
     display: flex;
   }
 
+  .justify-content-center {
+    justify-content: center;
+  }
+
   header > .container nav > ul {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    padding-top: 100px;
+    padding-top: 80px;
   }
 
   header > .container nav > ul > li {
@@ -191,6 +203,17 @@ header > .container > .row > h1 > a {
   header > .container nav > ul > li:hover {
     padding-bottom: 10px;
     border-bottom: 1px solid white;
+  }
+
+  .top-bar > .container > .row {
+    background-color: #8AC3A1;
+    align-items: center;
+  }
+
+  .top-bar > .container > .row > .col-3 {
+    margin: 0;
+    width: 25%;
+    align-items: center;
   }
 }
 header > .container nav > ul > li > a:hover {
@@ -223,6 +246,19 @@ header > .container > .title > h2 {
     top: 200px;
   }
 }
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.calendar {
+  display: flex;
+  margin-bottom: 50px;
+}
+
 .ig_content {
   width: 100%;
   max-width: 1440px;
