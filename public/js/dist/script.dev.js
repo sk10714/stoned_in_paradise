@@ -117,7 +117,7 @@ $('.indicator>li').on('click', function () {
 }); //.indiactor>li end
 
 function common() {
-  $('.child').animate({
+  $('.exterior-child').animate({
     'margin-left': -parentWidth * currentNum
   }, function () {
     if (currentNum == imgLength - 1) {

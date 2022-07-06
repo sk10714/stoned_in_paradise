@@ -109,7 +109,7 @@ $('.indicator>li').on('click',function(){
     common()
 })//.indiactor>li end
 function common(){
-    $('.child').animate({'margin-left': -parentWidth * currentNum}, function(){
+    $('.exterior-child').animate({'margin-left': -parentWidth * currentNum}, function(){
     if( currentNum == imgLength - 1 ){
         currentNum = 1
     }
