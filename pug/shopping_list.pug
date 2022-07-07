@@ -83,19 +83,40 @@ html(lang="zh-Hant")
             hr
             h2.text-center.margin-top-30.margin-bottom-30 尺寸
             .row 
-                .col-12.col-md-6.col-lg-6 
-                    img.img-fluid(src="public/images/litchi_cake_1.png", alt="")
+                .col-12.col-md-6.col-lg-6
+                    .product-img 
+                        img.img-fluid.main-product(src="public/images/litchi_cake_1.png", alt="")
+                        ul.sub-product 
+                            li 
+                                img.active(src="public/images/litchi_cake_1.png", alt="")
+                            li 
+                                img(src="public/images/litchi_cake_2.png", alt="")
+                            li 
+                                img(src="public/images/litchi_cake_3.png", alt="")                                                        
                 .col-12.col-md-6.col-lg-6  
                     h3 雨の夏（伯爵茶覆盆子玫瑰與荔枝）
                     p 蛋糕體：#[br]法國依斯尼奶油#[br]勤億葉黃素機能蛋#[br]內餡:#[br]伯爵茶#[br]覆盆子#[br]食用玫瑰花#[br]荔枝
                     p 每筆訂單以一顆蛋糕為限，以便訂單查詢。
-                    p 如有多顆蛋糕需求請分開下訂，訂購前有任何問題，歡迎點選聯絡我們聯繫。 
+                    p 如有多顆蛋糕需求請分開下訂。#[br]訂購前有任何問題，歡迎點選聯絡我們聯繫。 
                     form(action="")
                         label(for="size") 尺寸
+                        select.input-width
+                            option 5“
+                            option 6"
+                            option 8"
                         label(for="date") 取貨日期
+                            input#datepicker(type='text' size='30')
                         label(for="time") 取貨時段
+                        select.input-width
+                            option 12:00~13:30
+                            option 13:30~15:30
+                            option 15:30~17:00
                         label(for="way") 製作方式 
-
+                        select.input-width
+                            option 不指定樣式
+                            option 半客製化
+                            option 客製化
+            input.btn-primary.input-width(type="submit" value="送出訂單")
               
 
         .ig_content
@@ -151,3 +172,4 @@ html(lang="zh-Hant")
                     h6 © 2021 Stoned in Paradise Studio Co., Ltd. 發光的石頭
         script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous") 
         script(src="public/js/script.js") 
+

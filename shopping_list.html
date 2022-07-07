@@ -83,20 +83,46 @@
       <hr>
       <h2 class="text-center margin-top-30 margin-bottom-30">尺寸</h2>
       <div class="row"> 
-        <div class="col-12 col-md-6 col-lg-6"> <img class="img-fluid" src="public/images/litchi_cake_1.png" alt=""></div>
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="product-img"> <img class="img-fluid main-product" src="public/images/litchi_cake_1.png" alt="">
+            <ul class="sub-product"> 
+              <li> <img class="active" src="public/images/litchi_cake_1.png" alt=""></li>
+              <li> <img src="public/images/litchi_cake_2.png" alt=""></li>
+              <li> <img src="public/images/litchi_cake_3.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
         <div class="col-12 col-md-6 col-lg-6"> 
           <h3>雨の夏（伯爵茶覆盆子玫瑰與荔枝）</h3>
           <p>蛋糕體：<br>法國依斯尼奶油<br>勤億葉黃素機能蛋<br>內餡:<br>伯爵茶<br>覆盆子<br>食用玫瑰花<br>荔枝</p>
           <p>每筆訂單以一顆蛋糕為限，以便訂單查詢。</p>
-          <p>如有多顆蛋糕需求請分開下訂，訂購前有任何問題，歡迎點選聯絡我們聯繫。 </p>
+          <p>如有多顆蛋糕需求請分開下訂。<br>訂購前有任何問題，歡迎點選聯絡我們聯繫。 </p>
           <form action="">
             <label for="size">尺寸</label>
-            <label for="date">取貨日期</label>
+            <select class="input-width">
+              <option>5“</option>
+              <option>6"</option>
+              <option>8"</option>
+            </select>
+            <label for="date">取貨日期
+              <input id="datepicker" type="text" size="30">
+            </label>
             <label for="time">取貨時段</label>
+            <select class="input-width">
+              <option>12:00~13:30</option>
+              <option>13:30~15:30</option>
+              <option>15:30~17:00</option>
+            </select>
             <label for="way">製作方式 </label>
+            <select class="input-width">
+              <option>不指定樣式</option>
+              <option>半客製化</option>
+              <option>客製化</option>
+            </select>
           </form>
         </div>
       </div>
+      <input class="btn-primary input-width" type="submit" value="送出訂單">
     </div>
     <div class="ig_content">
       <div class="container">

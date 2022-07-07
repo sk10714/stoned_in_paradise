@@ -124,3 +124,11 @@ function common(){
 setInterval(function(){
     $('.right-arrow').click()
 }, 3000)
+
+//點小圖換大圖
+$('.sub-product img').click(function(e){
+    $('.main-product ').attr('src',$(this).attr('src'));
+    $(this).addClass('active');
+    $(this).parent().siblings().find('img').removeClass('active');
+    })
+    
