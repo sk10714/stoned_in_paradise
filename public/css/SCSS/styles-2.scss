@@ -259,7 +259,7 @@ header>.container>.title>h2{
 
 .s1>.row>.col-12{
     position: relative;
-    overflow: hidden;
+    overflow: hidden; 
 }
 .s1>.row>.col-12:hover p{
     bottom: 0;
@@ -273,6 +273,16 @@ header>.container>.title>h2{
     transition: all .5s;
     height: 60px;
     line-height: 60px;
+}
+@media (max-width:767px) {
+    .s1 p{
+        height: 150px;
+        line-height: 80%;
+        padding: 60px;
+    }
+    .s1>.row>.col-12:hover p{
+        bottom: 0;
+    }
 }
 .s1>.row img{
     display: block;

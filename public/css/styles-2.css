@@ -279,6 +279,17 @@ header > .container > .title > h2 {
   line-height: 60px;
 }
 
+@media (max-width: 767px) {
+  .s1 p {
+    height: 150px;
+    line-height: 80%;
+    padding: 60px;
+  }
+
+  .s1 > .row > .col-12:hover p {
+    bottom: 0;
+  }
+}
 .s1 > .row img {
   display: block;
   transition: all 0.5s;
