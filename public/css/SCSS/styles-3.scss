@@ -1,0 +1,798 @@
+$primary-color:#39485B;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style-type: none;;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    // background-color: rgb(247, 0, 0); 
+}
+.margin-top-30{
+    margin-top: 30px;
+}
+.margin-bottom-30{
+    margin-bottom: 30px;
+}
+.padding-bottom-30{
+    padding-bottom: 30px;
+}
+.margin-top-bottom-10{
+    margin: 10px auto;
+}
+.border{
+    border: 1px solid black;
+}
+.border-dotted{
+    border: 3px dotted black;
+}
+@media (min-width:768px){
+    .order-md-1{
+        order:-1;
+    }
+}
+
+
+// ===========================================================
+// ==================header start=============================
+// ===========================================================
+header{
+    background-image: url(../images/background_image_01.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width:1440px;
+    // background-attachment: fixed;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 580px;
+}
+header>.container>.row>h1>a{
+    display: block;
+}
+// header>.container>.row{
+//     justify-content: space-between;
+// }
+.flex-space-between{
+    justify-content: space-between;
+}
+
+@media (max-width:767px) {
+    header{
+        position: relative;
+        background-image: url(../images/background_image_md_1.png); 
+    }
+    header > .container > .row{
+        display:flex;
+        justify-content: space-around;
+        padding-top: 30px;;
+    }
+    nav{
+        width: 100%;
+        position: absolute;
+        top: 250px;
+        background-color: rgba(0, 0, 0, 0.252);
+        margin: 0; 
+        display: none;
+    }
+    nav.active{
+        display: block;
+    }
+    // nav{
+    //     position: absolute;
+    //     width: 100%;
+    //     top: 0;
+    //     left: 0;
+    //     display: none;
+    // }
+    // nav>ul>li{
+    //     line-height: 60px;
+    // }
+    nav>ul>li{
+        margin: 15px;
+    }
+    nav>ul>li>a{
+        text-align: center;
+        display: block;
+        color: white;
+        font-size: 24px;
+        padding: 5px;
+        // background-color: rgb(86, 86, 86);      
+    }
+    nav>ul>li>a:hover{
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+    nav>ul>li>a>img{
+        max-width: 50px;
+    }
+    .icon-menu{
+        width: 30%;
+        display: block;
+        // background-color: #fff;
+        color: white;
+        line-height: 200px;
+        text-align: center;
+        // border: 6px double white;
+        font-size: 36px;
+
+    }
+    .icon-menu  > span{
+        width: 80%;
+        display: block;
+        border-bottom: 3px solid #fff;
+        height: 40px;
+        margin-top: 50px;
+        // margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    .icon-menu span:before{
+        content:" ";
+        width: 100%;
+        display: block;
+        border-bottom: 3px solid #fff;
+        // margin-bottom: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+    }
+    .icon-menu span:after{
+        content:"";
+        width: 100%;
+        display: block;
+        border-bottom: 3px solid #fff;
+        // margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        bottom: -40px;
+    }
+    .icon-menu span.active:before{
+        transform: rotate(45deg);
+        top: 40px;
+        transition: transform .3s;
+    }
+    .icon-menu span.active:after{
+        transform: rotate(-45deg);
+        bottom: -5px;
+        transition: transform .3s;
+    }
+    .icon-menu span.active{
+        border-bottom: 3px
+    }
+}
+@media (min-width: 768px) {
+    header>.container>.row>h1>a>img{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 23px;
+    }
+    .display-md-none {
+        display: none;
+      }
+    
+      .display-md-block {
+        display: block;
+      }
+    
+      .display-md-flex {
+        display: flex;
+      }
+      header > .container nav > ul {
+          display: flex;
+          justify-content: center;
+          align-items: baseline;
+          padding-top: 100px;
+          // padding-right:10px;
+      }
+      header>.container nav>ul>li{
+          margin-left: 40px;
+          display: flex;
+          border-bottom: 1px solid transparent;
+      }
+      header>.container nav>ul>li>a{
+          color: white;
+          font-size: 24px;
+          display: block;
+          
+      }
+      header>.container nav>ul>li:nth-child(3){
+          margin-right:260px;
+      }
+      header>.container nav>ul>li:nth-child(4){
+          margin-left:0px;
+      }
+      header>.container nav>ul>li:nth-child(6){
+          margin-left:150px;
+      }
+      header>.container nav>ul>li:hover{
+        //   padding-bottom: 10px;
+          border-bottom: 1px solid rgb(255, 255, 255);
+      }
+    }
+    header>.container nav>ul>li>a:hover{
+        color: rgb(197, 189, 211);
+    }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-space-between {
+    justify-content: space-between;
+}
+header>.container>.row>nav>ul>li>a>img{
+    margin-bottom: 0;
+}
+// header>.container>.title{
+//     position: relative;
+// }
+header>.container>.title>h2{
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 300px;
+}
+@media (max-width:767px) {
+    header>.container>.title>h2{
+        top:200px
+    }
+}
+// ===========================================================
+// ================== header end =============================
+// ===========================================================
+.container>.text-center>p{
+    margin-bottom: 20px;
+}
+
+.banner{
+    width: 100%;
+    max-width:1440px;
+    margin: 50px auto;
+}
+//content start
+.container > h2{
+    margin-bottom: 30px;
+}
+.img-wrap img{
+    transition: all 0.5s;
+}
+article{
+    border: 3px dashed $primary-color;
+    padding: 20px;
+    display: flex;
+}
+.left{
+    margin-right: 20px;
+}
+article h3{
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+article p{
+    line-height: 2em;
+}
+article.boxhight{
+    padding-bottom: 83px;
+}
+//about start
+.exterior{
+    width:80%;
+    max-width: 1140px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.exterior-child{
+    font-size: 0;
+}
+.exterior img{
+    width: 100%;
+}
+.left-arrow, .right-arrow{
+    position: absolute;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 40px;
+    height: 100%;
+    top: 0px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black
+}
+.left-arrow{
+    left:0;
+}
+.right-arrow{
+    right: 0;
+}
+.indicator{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    // top:50%;
+    transform: translateX(-50%);
+}
+.indicator>li{
+    width: 10px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.indicator>li:last-child{
+    margin-right: 0;
+}
+.indicator>li.active{
+    background-color: tomato;
+}
+//about end
+//process頁面的製作方式 start
+@media (min-width: 768px) {
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+.product-title{
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.product-section-1>.container>.row>.col-md-6{
+    margin: 15px;
+    padding-left: 80px;
+}
+.product-section-2>.container>.row>.col-md-6{
+    margin: 15px;
+    padding-left: 80px;
+
+}
+.product-section-3>.container>.row>.col-md-6{
+    margin: 15px;
+    padding-left: 80px;
+}
+section>.container>.row{
+    border: 1px solid $primary-color;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.product-section-1 .row{
+    align-items: center;
+}
+.product-section-2 .row{
+    align-items: center;
+}
+.product-section-3 .row{
+    align-items: center;
+}
+}
+//process頁面的製作方式 end
+
+//cake頁面 start
+.circle{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 10px;
+}
+.color-1{
+    background-color: #fff;
+}
+.color-2{
+    background-color: #08192D;
+}
+.color-3{
+    background-color: #FFE4E1;
+}
+.color-4{
+    background-color: #6DA331;
+}
+.color-box{
+    display: flex;
+    flex-wrap: wrap;
+    // background-color: red;
+    justify-content: center;
+    padding-left: 30%;
+    
+}
+.color-chart{
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.color-chart>p{
+    display: block;
+}
+
+//cake頁面 end
+//faq頁面 start
+.faq-list {
+    padding: 16px 24px;
+    background-color: #F0F0F0;
+    -webkit-box-shadow: 0px 2px 10px rgba(48, 48, 48, 0.1);
+            box-shadow: 0px 2px 10px rgba(48, 48, 48, 0.1);
+    cursor: pointer;
+    margin-bottom: 48px;
+    border-radius: 4px;
+}
+  
+  .faq-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 18px;
+}
+.faq-title-p {
+    padding-top: 24px;
+    display: none;
+    color: rgba(22, 26, 20, 0.7);
+  }
+  .faq-title_p {
+    padding-top: 24px;
+    display: none;
+    color: rgba(22, 26, 20, 0.7);
+}
+  
+.btn-faq {
+    border: none;
+    width: 24px;
+    height: 24px;
+    // background-color: #F0F0F0;
+    position: relative;
+    cursor: pointer;
+  }
+  .btn-faq::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: $primary-color;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  .btn-faq::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: $primary-color;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  .btn-faq.open::after {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  .background-color{
+      background-color: rgb(85, 85, 85);
+      padding-bottom: 10px;
+  }
+
+//faq頁面 end
+//form strat
+.input-primary{
+    border: 1px solid $primary-color;
+    width: 49%;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 5px auto;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.input-width{
+    width:99%;
+}
+.input-height{
+    line-height: 100px;
+}
+input[type="submit"]{
+    padding:5px 15px; 
+    background: rgb(182, 179, 193); 
+    border:0 none;
+    cursor:pointer;
+}
+textarea{
+    border: 1px solid $primary-color;
+    border-radius: 3px;
+    padding: 10px 10px;
+    margin: 5px auto;
+    font-size: 16px;
+}
+//form end
+.ig_content{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url(../images/moroccan-flower.png);
+    background-repeat: repeat;
+}
+.ig_content > .container > h2{
+    padding-top: 30px;
+}
+.shortunderline::before{
+    content:"";
+    width: 4rem;
+    display: block;
+    border-bottom: 0.0625rem solid;
+    margin-bottom: 1.4375rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-content{
+    border: 6px double rgba(52, 51, 80, 0.50);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.ig_content>.container>.row .text-center{
+    background-color: rgb(52, 51, 80, 0.50);
+    width: 100%;
+    margin: 10px;
+    color: white;
+}
+.text-content h3{
+    margin: 15px 0;
+}
+.text-content p{
+    margin: 15px 0;
+}
+.button{
+    width: 60%;
+    margin-top: 22px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ig_content>.container>.row .text-center a{
+    display: block;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.ig_content>.container>.row .text-center a:hover{
+    border: 1px solid rgb(182, 182, 182);
+    color: rgb(182, 182, 182);
+}
+@media (max-width:767px) {
+    .text-center h3{
+        margin: 30px auto;
+        font-size: 20px;
+    }
+    .text-center p{
+        margin: 40px auto;
+        font-size: 20px;
+    }
+    .ig_content>.container>.row .text-center a{
+        margin-bottom: 50px;
+    }
+}
+.logo img{
+    margin: 0 auto;
+}
+//content end
+//footer start
+footer{
+    background-color: $primary-color;
+    color: white;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+footer>.container .icon{
+    display: flex;
+    margin: 40px 0;
+    justify-content: center;
+
+}
+footer>.container>.icon a{
+    display: block;
+    padding: 0 20px;
+}
+footer>.container .information{
+    display: block;
+    padding-bottom: 20px;
+}
+footer>.container .information>h5{
+    margin-bottom: 10px;
+}
+
+//footer end
+
+// 文字相關樣式
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-justify{
+    text-align: justify;
+}
+// 圖片相關樣式
+.img-fluid{
+    width: 100%;
+}
+.img-fluid-2{
+    width: 70%;
+    margin: 0 auto;
+}
+.img-fluid-3{
+    width: 30%;
+    margin: 0 auto;
+}
+.img-fluid-4{
+    width: 20%;
+}
+.img-icon{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:-40%;
+}
+.img-overlay:hover .img-icon{
+    top:35%
+}
+
+.img-wrap{
+    display:block;
+    position: relative;
+}
+.img-overlay{
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    height: 349.99px;
+    margin-bottom: 10px;
+}
+.img-wrap>.img-overlay>.img-fluid:hover{
+    transform: scale(1.5);
+}
+
+@media (min-width: 768px) {
+    .img-overlay-2{
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .img-overlay-2>a h3{
+        display: none;
+        position: absolute;
+        transform: translateX(-50%);
+        color: white;
+    }
+    .img-overlay-2>a h4{
+        display: none;
+        position: absolute;
+        font-size: 16px;
+        transform: translateX(-50%);
+        color: white;
+    }
+    .img-overlay-2>a:hover h3{
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+    }
+    .img-overlay-2>a:hover h4{
+        display: block;
+        position: absolute;
+        font-size: 16px;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+    }
+    .img-overlay-2>a:hover .blur{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(2px);
+    }
+}
+@media (max-width:767px) {
+    .img-overlay-2>a h3{
+        display: none;
+    }
+    .img-overlay-2>a h4{
+        display: none;
+    }
+}
+
+@for $i from 1 through 12{
+    .col-#{$i}{
+    --num:calc(12 / #{$i});
+    width:calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+}}
+
+@media (min-width:768px){
+    @for $i from 1 through 12{
+        .col-md-#{$i}{
+            --num:calc(12/ #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+    }
+}
+
+@media (min-width:1200px){
+    @for $i from 1 through 12 {
+        .col-lg-#{$i}{
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+    }
+}
+// 左邊界位移
+@media (min-width:768px){
+    @for $i from 1 through 12 {
+        
+        .offset-md-#{$i}{
+            --ml-num: calc(12 / #{$i});
+            margin-left: calc(100% / var(--ml-num));
+        }
+    }
+} //ml 768 end
+.container>.row>.col-12>.row{
+    justify-content: center;
+    
+}
+.container>.row>.col-12>.row>.display-md-flex{
+    justify-content: space-around;
+    width: 60%;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+.container>.row>.col-12>.row>.display-md-flex>.img-fluid-3{
+    width: 10%;
+}
+.container>.row>.col-12>.row>.display-md-flex>.color-white{
+    color: white;
+}
