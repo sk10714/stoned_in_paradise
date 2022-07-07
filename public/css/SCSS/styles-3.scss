@@ -348,7 +348,7 @@ article.boxhight{
 //about end
 //process頁面的製作方式 start
 @media (max-width: 767px) {
-.container>.row>.col-12 img{
+.container>.row>.col-12 >img.example{
     width: 100%;
     max-width: 300px;
 }
@@ -805,6 +805,7 @@ footer>.container .information>h5{
     .container>.row>.col-12>.row>.display-md-flex> img{
         width: 50%;
     }
+
 }
 .container>.row>.col-12>.row>.display-md-flex>.color-white{
     color: white;

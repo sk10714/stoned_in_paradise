@@ -362,7 +362,7 @@ article.boxhight {
 }
 
 @media (max-width: 767px) {
-  .container > .row > .col-12 img {
+  .container > .row > .col-12 > img.example {
     width: 100%;
     max-width: 300px;
   }
