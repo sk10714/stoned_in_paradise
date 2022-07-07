@@ -599,3 +599,26 @@ footer>.container .information>h5{
         }
     }
 } //ml 768 end
+
+.loading-overlay{
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color:#39485B;
+    // display: none;
+    transition: .3s all;
+    transition-delay: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading-overlay.active{
+    opacity:0;
+}
+.loader{
+    width: 100%;
+    max-width: 200px;
+}

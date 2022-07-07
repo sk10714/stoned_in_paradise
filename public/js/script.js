@@ -133,3 +133,7 @@ $('.sub-product img').click(function(e){
     })
     
     new WOW().init();
+
+$(window).on('load',function(){
+    $('.loading-overlay').addClass('active')
+})// window load end

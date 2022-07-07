@@ -1093,3 +1093,27 @@ footer > .container .information > h5 {
 .container > .row > .col-12 > .row > .display-md-flex > .color-white {
   color: white;
 }
+
+.loading-overlay {
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #39485B;
+  transition: 0.3s all;
+  transition-delay: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-overlay.active {
+  top: -100vh;
+}
+
+.loader {
+  width: 100%;
+  max-width: 200px;
+}
