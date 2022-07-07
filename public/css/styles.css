@@ -68,6 +68,7 @@ header > .container > .row > h1 > a {
 
 @media (max-width: 767px) {
   header {
+    padding-bottom: 300px;
     position: relative;
     background-image: url(../images/background_image_md_1.png);
   }

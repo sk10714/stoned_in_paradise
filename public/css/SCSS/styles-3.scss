@@ -68,6 +68,7 @@ header>.container>.row>h1>a{
 
 @media (max-width:767px) {
     header{
+        padding-bottom: 300px;
         position: relative;
         background-image: url(../images/background_image_md_1.png); 
     }
@@ -346,6 +347,13 @@ article.boxhight{
 }
 //about end
 //process頁面的製作方式 start
+@media (max-width: 767px) {
+.container>.row>.col-12 img{
+    width: 100%;
+    max-width: 300px;
+}
+}
+
 @media (min-width: 768px) {
 .position-relative{
     position: relative;
@@ -790,8 +798,13 @@ footer>.container .information>h5{
     flex-wrap: nowrap;
     margin-bottom: 10px;
 }
-.container>.row>.col-12>.row>.display-md-flex>.img-fluid-3{
+.container>.row>.col-12>.row>.display-md-flex> img{
     width: 10%;
+}
+@media (max-width:767px) {
+    .container>.row>.col-12>.row>.display-md-flex> img{
+        width: 50%;
+    }
 }
 .container>.row>.col-12>.row>.display-md-flex>.color-white{
     color: white;
