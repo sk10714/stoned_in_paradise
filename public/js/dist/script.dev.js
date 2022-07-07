@@ -145,7 +145,27 @@ $('.sub-product img').click(function (e) {
   $('.main-product ').attr('src', $(this).attr('src'));
   $(this).addClass('active');
   $(this).parent().siblings().find('img').removeClass('active');
-});
+}); // 捲軸事件
+
+var offsetTop;
+var product1Top = $('.banner').offset().top;
+$(window).scroll(function () {
+  offsetTop = $(window).scrollTop(); // console.log('卷軸高', offsetTop)
+
+  if (offsetTop >= 900) {
+    $('.page-top').addClass('active');
+  } else {
+    $('.page-top').removeClass('active');
+  }
+}); //scroll end
+// 點按page-top回到最上方
+
+$('.page-top').on('click', function () {
+  $('html, body').animate({
+    scrollTop: 0
+  });
+}); //.page-top
+
 new WOW().init();
 $(window).on('load', function () {
   $('.loading-overlay').addClass('active');
