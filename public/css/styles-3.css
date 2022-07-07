@@ -487,6 +487,7 @@ article.boxhight {
   border: none;
   width: 24px;
   height: 24px;
+  background-color: #F0F0F0;
   position: relative;
   cursor: pointer;
 }

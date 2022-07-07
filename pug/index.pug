@@ -6,6 +6,7 @@ html(lang="zh-Hant")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title 發光的石頭
         link(rel='stylesheet' href='public/css/styles.css')
+        link(rel='stylesheet' href='public/js/WOW-master/css/libs/animate.css')
 
 
         
@@ -37,12 +38,12 @@ html(lang="zh-Hant")
         .container 
             .text-center
                 p
-                    img(src="public/images/logo_3.png", alt="")
-                p 就像礦石裡頭，閃亮繽紛的色彩一般；
-                p 如同在平凡生活中，沾染一點新奇。
-                p 將我們喜愛的樣子呈現給大家，
-                p 但願你也能困在這天堂般的美好之中。
-        .banner
+                    img.wow.bounce(src="public/images/logo_3.png", alt="")
+                p.wow.fadeInDown 就像礦石裡頭，閃亮繽紛的色彩一般；
+                p.wow.fadeInDown 如同在平凡生活中，沾染一點新奇。
+                p.wow.fadeInDown 將我們喜愛的樣子呈現給大家，
+                p.wow.fadeInDown 但願你也能困在這天堂般的美好之中。
+        .banner.wow.fadeInDown
             picture
                 source(srcset="public/images/background_image_02.png" media="(min-width: 767px)")   
                 img.img-fluid(src="public/images/background_image_md_2.png")
@@ -119,4 +120,5 @@ html(lang="zh-Hant")
                     h5 位置：台中市西區向上北路224巷21號
                     h6 © 2021 Stoned in Paradise Studio Co., Ltd. 發光的石頭
     script(src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous") 
-    script(src="public/js/script.js") 
+    script(src="public/js/WOW-master/dist/wow.min.js")
+    script(src="public/js/script.js")

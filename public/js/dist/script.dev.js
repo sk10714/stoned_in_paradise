@@ -146,3 +146,4 @@ $('.sub-product img').click(function (e) {
   $(this).addClass('active');
   $(this).parent().siblings().find('img').removeClass('active');
 });
+new WOW().init();
