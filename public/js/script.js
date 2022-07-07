@@ -134,7 +134,7 @@ $('.sub-product img').click(function(e){
 
 // 捲軸事件
 let offsetTop
-let product1Top = $('.banner').offset().top 
+let product1Top = $('.container').offset().top 
 $(window).scroll(function(){
     offsetTop = $(window).scrollTop()
     // console.log('卷軸高', offsetTop)
@@ -144,6 +144,7 @@ $(window).scroll(function(){
         $('.page-top').removeClass('active')
     }
 })//scroll end
+
 
 
 

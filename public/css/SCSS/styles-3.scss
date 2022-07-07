@@ -838,3 +838,25 @@ footer>.container .information>h5{
     width: 100%;
     max-width: 200px;
 }
+
+.page-top{
+    position: fixed;
+    right:10px;
+    bottom:10px;
+    background-color: gray;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    color:white;
+    // display: none;
+    right:-60px;
+    transform: rotate(0deg);
+    transition: all .3s;
+}
+.page-top.active{
+    // display: block;
+    right:5px;
+    transform: rotate(360deg);
+}
