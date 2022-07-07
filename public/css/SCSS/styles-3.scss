@@ -425,6 +425,12 @@ section>.container>.row{
     padding-left: 30%;
     
 }
+@media (max-width:767px) {
+    .color-box{
+        padding-left: 10%;
+    }
+
+}
 .color-chart{
     display: flex;
     width: 100%;
