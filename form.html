@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="public/js/validate/"></script>
+    <script src="public/js/validate/moment.min.js"></script>
+    <script src="public/js/validate/validate.js"></script>
+    <style>
+ *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section.form{
+            background-color: lightgray;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        .container{
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+        }
+        .social-icon-group{
+            display: flex;
+            justify-content: space-between;
+        }
+        .icon-fb, .icon-google{
+            padding:1%;
+            text-decoration: none;
+            border-radius:4px;
+            width: 48%;
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .icon-fb{
+            background: darkblue;
+            color:white;
+           
+        }
+        .icon-fb>i, .icon-google>i{
+            margin-right: 8px;
+        }
+        .icon-google{
+            color:black;
+            background: white;
+        }
+        .input-width{
+            width:100%;
+            border:none;
+            border:1px solid gray;
+            padding:10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        label{
+            margin-bottom: 5px;
+            display: block;
+        }
+        .btn-primary{
+            cursor: pointer;
+            background-color: orange;
+        }
+        #check-order{
+            display: none;
+        }
+        .messages{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <section class="form">
+        <div class="container">
+            <!-- 表單 start -->
+            <form action="" id="main">
+                <div class="from-group">
+                    <label for="account">帳號</label>
+                    <input class="input-width" type="text" name="account" id="account" placeholder="請輸入e-mail">
+                    <div class="messages"></div>
+                </div>
+                <div class="from-group">
+                    <label for="confrim-password">密碼</label>
+                    <input class="input-width" type="password" name="confrim-assword" id="confrim-password" placeholder="請輸入密碼">
+                    <div class="messages"></div>
+                </div>
+                <div class="from-group">
+                    <label for="password">確認密碼</label>
+                    <input class="input-width" type="password" name="password" id="password" placeholder="請輸入密碼">
+                    <div class="messages"></div>
+                </div>
+                <div class="from-group">
+                    <label for="gender">性別:
+                        <input type="radio" name="gender" value="男">男
+                        <input type="radio" name="gender" value="女">女
+                    </label>
+                    <div class="messages"></div>
+                </div>
+                <div class="form-group">
+                        <div class='input-group date' id='time'>
+                            <input type='text' class="form-control" />
+                        </div>
+                        <div class="messages"></div>
+                    </div>
+                <div class="form-group">
+                    <label for="">日期</label>
+                    <div id="time">
+                        <input type="text" class="form-control">
+                        <div class="messages"></div>
+                    </div>
+                </div>
+                    <br>
+                <div class="form-group">
+                    <label for="">問題分類</label>
+                    <!-- <select class="input-width" name="" id="">
+                        <option value="">業務問題</option>
+                        <option value="">批發相關</option>
+                        <option value="">其他</option>
+                    </select> -->
+                    <!-- <label for="order">宅配申請:
+                        <input id="order" type="radio" name="order" value="是">是
+                        <input type="radio" name="order" value="否">否
+                    </label> -->
+                    <!-- <div id="check-order">
+                        <input  type="checkbox" name="" id="">確認說明書
+                    </div> -->
+                </div>
+                    <br>
+                <div class="form-group">
+                    <label for="message">內容</label>
+                    <textarea placeholder="訊息內容" class="input-width" name="message" id="message" cols="30" rows="10"></textarea>
+                    <input class="btn-primary input-width" type="submit" value="送出表單">
+                    <div class="messages"></div>
+                </div>
+            </form>
+            <!-- 表單 end -->
+            <div class="social-icon-group">
+                <a class="icon-fb" href="javascript:;" target="_blank"><i class="fa-brands fa-facebook-f"></i>使用 facebook 登入</a>
+                <a class="icon-google" href="javascript:;" target="_blank"><i class="fa-brands fa-google"></i>使用 Google 登入</a>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="public/js/bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="public/js/bootstrap-datepicker-1.9.0-dist/locales/bootstrap-datepicker.zh-TW.min.js"></script>
+    <script>
+         $('#time input').datepicker({
+            });
+        $('input[name="order"]').on('change',function(){
+                console.log($(this).value)
+
+            if( $(this).val() == '是'  ){
+                console.log('是')
+                $('#check-order').show()
+            }else{
+                $('#check-order').hide()
+                console.log('否')
+
+            }
+        })
+    </script>
+</body>
+</html>

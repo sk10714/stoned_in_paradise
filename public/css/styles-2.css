@@ -897,7 +897,7 @@ footer > .container .information > h5 {
   position: fixed;
   right: 10px;
   bottom: 10px;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.5);
   width: 50px;
   line-height: 50px;
   border-radius: 50%;
