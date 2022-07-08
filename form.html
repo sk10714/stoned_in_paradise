@@ -5,17 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="public/js/validate/"></script>
-    <script src="public/js/validate/moment.min.js"></script>
-    <script src="public/js/validate/validate.js"></script>
+
     <style>
- *{
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         section.form{
-            background-color: lightgray;
+            /* background-color: lightgray; */
             padding-top: 80px;
             padding-bottom: 80px;
         }
@@ -48,6 +46,7 @@
         .icon-google{
             color:black;
             background: white;
+            border: 1px solid lightgray;
         }
         .input-width{
             width:100%;
@@ -55,15 +54,18 @@
             border:1px solid gray;
             padding:10px;
             border-radius: 4px;
-            margin-bottom: 20px;
+            /* margin-bottom: 20px; */
         }
         label{
+            margin-top: 10px;
             margin-bottom: 5px;
             display: block;
         }
         .btn-primary{
             cursor: pointer;
             background-color: orange;
+            margin-bottom: 10px;
+            margin-top: 10px;
         }
         #check-order{
             display: none;
@@ -76,66 +78,59 @@
 <body>
     <section class="form">
         <div class="container">
+            <!-- 登入 #login -->
+            <!-- 註冊 #register -->
+
             <!-- 表單 start -->
+            <!-- 1.要寫id，表單欄位要放在form裡面 -->
             <form action="" id="main">
-                <div class="from-group">
+                <!-- 2.父層class名稱 .form-group -->
+                <div class="form-group">
                     <label for="account">帳號</label>
-                    <input class="input-width" type="text" name="account" id="account" placeholder="請輸入e-mail">
+                    <input class="input-width" type="text" name="account" id="account" placeholder="請輸入e-mail" autocomplete="off">
                     <div class="messages"></div>
                 </div>
-                <div class="from-group">
-                    <label for="confrim-password">密碼</label>
-                    <input class="input-width" type="password" name="confrim-assword" id="confrim-password" placeholder="請輸入密碼">
-                    <div class="messages"></div>
-                </div>
-                <div class="from-group">
-                    <label for="password">確認密碼</label>
+                <div class="form-group">
+                    <label for="password">密碼</label>
                     <input class="input-width" type="password" name="password" id="password" placeholder="請輸入密碼">
                     <div class="messages"></div>
+                
                 </div>
-                <div class="from-group">
+                <div class="form-group">
+                    <label for="confirm-password">確認密碼</label>
+                    <input class="input-width" type="password" name="confirm-password" id="confirm-password" placeholder="請輸入密碼">
+                    <div class="messages"></div>
+                
+                </div>
+                <div class="form-group">
                     <label for="gender">性別:
                         <input type="radio" name="gender" value="男">男
                         <input type="radio" name="gender" value="女">女
                     </label>
-                    <div class="messages"></div>
                 </div>
-                <div class="form-group">
-                        <div class='input-group date' id='time'>
-                            <input type='text' class="form-control" />
-                        </div>
-                        <div class="messages"></div>
-                    </div>
-                <div class="form-group">
-                    <label for="">日期</label>
-                    <div id="time">
-                        <input type="text" class="form-control">
-                        <div class="messages"></div>
-                    </div>
-                </div>
-                    <br>
                 <div class="form-group">
                     <label for="">問題分類</label>
-                    <!-- <select class="input-width" name="" id="">
+                    <select class="input-width" name="" id="">
                         <option value="">業務問題</option>
                         <option value="">批發相關</option>
                         <option value="">其他</option>
-                    </select> -->
-                    <!-- <label for="order">宅配申請:
-                        <input id="order" type="radio" name="order" value="是">是
-                        <input type="radio" name="order" value="否">否
-                    </label> -->
-                    <!-- <div id="check-order">
-                        <input  type="checkbox" name="" id="">確認說明書
-                    </div> -->
+                    </select>
                 </div>
-                    <br>
                 <div class="form-group">
-                    <label for="message">內容</label>
-                    <textarea placeholder="訊息內容" class="input-width" name="message" id="message" cols="30" rows="10"></textarea>
-                    <input class="btn-primary input-width" type="submit" value="送出表單">
-                    <div class="messages"></div>
+                    <label for="order">宅配申請:
+                    <input id="order" type="radio" name="order" value="是">是
+                    <input type="radio" name="order" value="否">否
+                </label>
                 </div>
+                <div class="form-group">
+                    <div id="check-order">
+                        <input  type="checkbox" name="" id="">確認說明書
+                    </div>
+                </div>
+                <br>
+                <label for="message">內容</label>
+                <textarea class="input-width" name="message" id="message" cols="30" rows="10"></textarea>
+                <input class="btn-primary input-width" type="submit" value="送出表單">
             </form>
             <!-- 表單 end -->
             <div class="social-icon-group">
@@ -144,12 +139,148 @@
             </div>
         </div>
     </section>
+
+    <script src="public/js/validate/underscore-min.js"></script>
+    <script src="public/js/validate/moment.min.js"></script>
+    <script src="public/js/validate/validate.js"></script>    
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="public/js/bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.min.js"></script>
-    <script src="public/js/bootstrap-datepicker-1.9.0-dist/locales/bootstrap-datepicker.zh-TW.min.js"></script>
     <script>
-         $('#time input').datepicker({
-            });
+        (function() {
+      validate.extend(validate.validators.datetime, {
+        parse: function(value, options) {
+          return +moment.utc(value);
+        },
+        format: function(value, options) {
+          var format = options.dateOnly ? "YYYY-MM-DD" : "YYYY-MM-DD hh:mm:ss";
+          return moment.utc(value).format(format);
+        }
+      });
+
+      var constraints = {
+        account: {
+          presence: {message: '為必填項目'},
+          email: {message: '為電子郵件的格式'}
+        },
+        password: {
+          presence: {message: '為必填項目'},
+          length: {
+            minimum: 5,
+            message: '最少五個字元'
+          }
+        },
+        "confirm-password": {
+          presence: {message: '為必填項目'},
+          equality: {
+            attribute: "password",
+            message: "密碼不一致"
+          }
+        },
+       
+      
+      };
+
+      // Hook up the form so we can prevent it from being posted
+      var form = document.querySelector("form#main");
+      form.addEventListener("submit", function(ev) {
+        ev.preventDefault();
+        handleFormSubmit(form);
+      });
+
+      // Hook up the inputs to validate on the fly
+      var inputs = document.querySelectorAll("input, textarea, select")
+      for (var i = 0; i < inputs.length; ++i) {
+        inputs.item(i).addEventListener("change", function(ev) {
+          var errors = validate(form, constraints) || {};
+          showErrorsForInput(this, errors[this.name])
+        });
+      }
+
+      function handleFormSubmit(form, input) {
+        // validate the form against the constraints
+        var errors = validate(form, constraints);
+        // then we update the form to reflect the results
+        showErrors(form, errors || {});
+        if (!errors) {
+          showSuccess();
+        }
+      }
+
+      // Updates the inputs with the validation errors
+      function showErrors(form, errors) {
+        // We loop through all the inputs and show the errors for that input
+        _.each(form.querySelectorAll("input[name], select[name]"), function(input) {
+          // Since the errors can be null if no errors were found we need to handle
+          // that
+          showErrorsForInput(input, errors && errors[input.name]);
+        });
+      }
+
+      // Shows the errors for a specific input
+      function showErrorsForInput(input, errors) {
+        // This is the root of the input
+        var formGroup = closestParent(input.parentNode, "form-group")
+          // Find where the error messages will be insert into
+          , messages = formGroup.querySelector(".messages");
+        // First we remove any old messages and resets the classes
+        resetFormGroup(formGroup);
+        // If we have errors
+        if (errors) {
+          // we first mark the group has having errors
+          formGroup.classList.add("has-error");
+          // then we append all the errors
+          _.each(errors, function(error) {
+            addError(messages, error);
+          });
+        } else {
+          // otherwise we simply mark it as success
+          formGroup.classList.add("has-success");
+        }
+      }
+
+      // Recusively finds the closest parent that has the specified class
+      function closestParent(child, className) {
+        if (!child || child == document) {
+          return null;
+        }
+        if (child.classList.contains(className)) {
+          return child;
+        } else {
+          return closestParent(child.parentNode, className);
+        }
+      }
+
+      function resetFormGroup(formGroup) {
+        // Remove the success and error classes
+        formGroup.classList.remove("has-error");
+        formGroup.classList.remove("has-success");
+        // and remove any old messages
+        _.each(formGroup.querySelectorAll(".help-block.error"), function(el) {
+          el.parentNode.removeChild(el);
+        });
+      }
+
+      // Adds the specified error with the following markup
+      // <p class="help-block error">[message]</p>
+      function addError(messages, error) {
+        var block = document.createElement("p");
+        block.classList.add("help-block");
+        block.classList.add("error");
+        block.innerText = error;
+        messages.appendChild(block);
+      }
+
+      function showSuccess() {
+        // We made it \:D/
+        alert("Success!");
+      }
+    })();
+
+
+
+
+
+
         $('input[name="order"]').on('change',function(){
                 console.log($(this).value)
 
