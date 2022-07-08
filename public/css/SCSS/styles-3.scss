@@ -446,9 +446,12 @@ section>.container>.row{
 .color-chart>p{
     display: block;
 }
+.overflow-hidden{
+    overflow: hidden;
+    border-radius: 3px;
+}
 @media (min-width: 768px) {
     .container>.row>.col-6>a>.overflow-hidden{
-        overflow: hidden;
         height: 255px;
 
     }
