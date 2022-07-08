@@ -122,10 +122,10 @@ header > .container > .row > h1 > a {
   }
 
   .icon-menu > span {
-    width: 80%;
+    width: 50%;
     display: block;
-    border-bottom: 3px solid #fff;
-    height: 40px;
+    border-bottom: 2px solid #fff;
+    height: 60px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -136,32 +136,35 @@ header > .container > .row > h1 > a {
     content: " ";
     width: 100%;
     display: block;
-    border-bottom: 3px solid #fff;
+    border-bottom: 2px solid #fff;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
+    margin-top: 40px;
+    transition: transform 0.3s;
   }
 
   .icon-menu span:after {
     content: "";
     width: 100%;
     display: block;
-    border-bottom: 3px solid #fff;
+    border-bottom: 2px solid #fff;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    bottom: -40px;
+    bottom: -20px;
+    transition: transform 0.3s;
   }
 
   .icon-menu span.active:before {
     transform: rotate(45deg);
-    top: 40px;
+    top: 20px;
     transition: transform 0.3s;
   }
 
   .icon-menu span.active:after {
     transform: rotate(-45deg);
-    bottom: -5px;
+    bottom: -2px;
     transition: transform 0.3s;
   }
 
@@ -252,6 +255,7 @@ header > .container > .title > h2 {
 @media (max-width: 767px) {
   header > .container > .title > h2 {
     top: 200px;
+    font-size: 20px;
   }
 }
 .container > .text-center > p {
@@ -463,6 +467,17 @@ article.boxhight {
   display: block;
 }
 
+@media (min-width: 768px) {
+  .container > .row > .col-6 > a > .overflow-hidden {
+    overflow: hidden;
+    height: 255px;
+  }
+
+  .container > .row > .col-6 > a > .overflow-hidden:hover img {
+    transform: scale(1.2);
+    transition: 0.5s all;
+  }
+}
 .faq-list {
   padding: 16px 24px;
   background-color: #F0F0F0;

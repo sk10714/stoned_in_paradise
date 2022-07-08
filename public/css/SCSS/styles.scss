@@ -127,10 +127,10 @@ header>.container>.row>h1>a{
 
     }
     .icon-menu  > span{
-        width: 80%;
+        width: 50%;
         display: block;
-        border-bottom: 3px solid #fff;
-        height: 40px;
+        border-bottom: 2px solid #fff;
+        height: 20px;
         margin-top: 50px;
         // margin-bottom: 10px;
         margin-left: auto;
@@ -141,31 +141,33 @@ header>.container>.row>h1>a{
         content:" ";
         width: 100%;
         display: block;
-        border-bottom: 3px solid #fff;
+        border-bottom: 2px solid #fff;
         // margin-bottom: 70px;
         margin-left: auto;
         margin-right: auto;
         position: absolute;
+        transition: transform .3s;
     }
     .icon-menu span:after{
         content:"";
         width: 100%;
         display: block;
-        border-bottom: 3px solid #fff;
+        border-bottom: 2px solid #fff;
         // margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
         position: absolute;
-        bottom: -40px;
+        bottom: -20px;
+        transition: transform .3s;
     }
     .icon-menu span.active:before{
         transform: rotate(45deg);
-        top: 40px;
+        top: 20px;
         transition: transform .3s;
     }
     .icon-menu span.active:after{
         transform: rotate(-45deg);
-        bottom: -5px;
+        bottom: -2px;
         transition: transform .3s;
     }
     .icon-menu span.active{
