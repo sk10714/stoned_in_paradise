@@ -65,6 +65,9 @@ header>.container>.row>h1>a{
 .flex-space-between{
     justify-content: space-between;
 }
+header>.container>.title>h2{
+    font-family: Raleway;
+}
 
 @media (max-width:767px) {
     header{

@@ -66,6 +66,10 @@ header > .container > .row > h1 > a {
   justify-content: space-between;
 }
 
+header > .container > .title > h2 {
+  font-family: Raleway;
+}
+
 @media (max-width: 767px) {
   header {
     padding-bottom: 300px;
