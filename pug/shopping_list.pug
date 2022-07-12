@@ -35,52 +35,52 @@ html(lang="zh-Hant")
         .top-bar
             .container
                 .row
-                    .col-3.col-md-3.col-lg-3.display-md-flex.justify-content-center
+                    a(href="#a1").col-3.col-md-3.col-lg-3.display-md-flex.justify-content-center
                         .triangle
                         .triangle 
                         .triangle 
                         .triangle
                         h3 STEP1
-                    .col-3.col-md-3.col-lg-3.display-md-flex.justify-content-center
+                    a(href="#a2").col-3.col-md-3.col-lg-3.display-md-flex.justify-content-center
                         .triangle
                         .triangle 
                         .triangle 
                         .triangle
                         h3 STEP2
-                    .col-3.col-md-3.col-lg-3.display-md-flex.justify-content-center
+                    a(href="#a3").col-3.col-md-3.col-lg-3.display-md-flex.justify-content-center
                         .triangle
                         .triangle 
                         .triangle 
                         .triangle                   
                         h3 STEP3
-                    .col-3.col-md-3.col-lg-3.display-md-flex.justify-content-center
+                    a(href="#a4").col-3.col-md-3.col-lg-3.display-md-flex.justify-content-center
                         .triangle
                         .triangle 
                         .triangle 
                         .triangle
                         h3 STEP4 
         .container.s1       
-            h2.text-center.margin-top-30.margin-bottom-30 本月行事曆
-            .calendar
-                img.img-fluid-2(src="public/images/on_calendar.jpg", alt="")
-            hr
-            h2.text-center.margin-top-30.margin-bottom-30 蛋糕口味
-            .row.text-center
-                .col-12.col-md-3.col-lg-3
-                    img.img-fluid(src="public/images/chocolate_cake.png", alt="") 
-                    p 酒香濃巧克力
-                .col-12.col-md-3.col-lg-3
-                    img.img-fluid(src="public/images/earl_grey.png", alt="") 
-                    p 伯爵茶青檸檬
-                .col-12.col-md-3.col-lg-3 
-                    img.img-fluid(src="public/images/matcha_cake.png", alt="") 
-                    p 小山園抹茶與焙茶厚奶凍
-                .col-12.col-md-3.col-lg-3 
-                    img.img-fluid(src="public/images/litchi_cake.png", alt="") 
-                    p 雨の夏
+                h2#a1.text-center.margin-top-30.margin-bottom-30 本月行事曆
+                .calendar
+                    img.img-fluid-2(src="public/images/on_calendar.jpg", alt="")
+                hr
+                h2#a2.text-center.margin-top-30.margin-bottom-30 蛋糕口味
+                .row.text-center
+                    .col-12.col-md-3.col-lg-3
+                        img.img-fluid(src="public/images/chocolate_cake.png", alt="") 
+                        p 酒香濃巧克力
+                    .col-12.col-md-3.col-lg-3
+                        img.img-fluid(src="public/images/earl_grey.png", alt="") 
+                        p 伯爵茶青檸檬
+                    .col-12.col-md-3.col-lg-3 
+                        img.img-fluid(src="public/images/matcha_cake.png", alt="") 
+                        p 小山園抹茶與焙茶厚奶凍
+                    .col-12.col-md-3.col-lg-3 
+                        img.img-fluid(src="public/images/litchi_cake.png", alt="") 
+                        p 雨の夏
         .container
             hr
-            h2.text-center.margin-top-30.margin-bottom-30 尺寸
+            h2#a3.text-center.margin-top-30.margin-bottom-30 尺寸
             .row 
                 .col-12.col-md-6.col-lg-6
                     .product-img 
@@ -115,8 +115,7 @@ html(lang="zh-Hant")
                             option 不指定樣式
                             option 半客製化
                             option 客製化
-            input.btn-primary.input-width(type="submit" value="送出訂單")
-              
+            input#a4.btn-primary.input-width(type="submit" value="送出訂單")
 
         .ig_content
             .container
