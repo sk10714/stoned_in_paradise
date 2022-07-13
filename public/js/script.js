@@ -137,11 +137,31 @@ let offsetTop
 let product1Top = $('.container').offset().top 
 $(window).scroll(function(){
     offsetTop = $(window).scrollTop()
-    // console.log('卷軸高', offsetTop)
+    console.log('卷軸高', offsetTop)
     if(offsetTop >= 900){
         $('.page-top').addClass('active')
     }else{
         $('.page-top').removeClass('active')
+    }
+    if(offsetTop >= 199 && offsetTop < 1112){
+        $('.discolor').addClass('active')
+    }else{
+        $('.discolor').removeClass('active')
+    }
+    if(offsetTop >= 1112 && offsetTop < 1502){
+        $('.discolor2').addClass('active')
+    }else{
+        $('.discolor2').removeClass('active')
+    }
+    if(offsetTop >= 1502 && offsetTop < 1800){
+        $('.discolor3').addClass('active')
+    }else{
+        $('.discolor3').removeClass('active')
+    }
+    if(offsetTop >= 1800){
+        $('.discolor4').addClass('active')
+    }else{
+        $('.discolor4').removeClass('active')
     }
 })//scroll end
 
@@ -154,9 +174,16 @@ $('.page-top').on('click', function(){
     $('html, body').animate({ scrollTop: 0 })
 })//.page-top
 
-new WOW().init();
 
 $(window).on('load',function(){
     $('.loading-overlay').addClass('active')
 })// window load end
 
+$('.top-bar>.container>ul>li').on('click',function(e){
+    e.preventDefault()
+    let currentAHref = $(this).find('a').attr('href')
+    $('html,body').animate({scrollTop: $(currentAHref).offset().top - 56 })
+
+})
+
+new WOW().init();

@@ -71,9 +71,10 @@ header > .container > .row > h1 > a {
     width: 100%;
     position: absolute;
     top: 250px;
-    background-color: rgba(0, 0, 0, 0.252);
+    background-color: rgba(0, 0, 0, 0.775);
     margin: 0;
     display: none;
+    z-index: 1000;
   }
 
   nav.active {
@@ -112,7 +113,7 @@ header > .container > .row > h1 > a {
   .icon-menu > span {
     width: 50%;
     display: block;
-    border-bottom: 3px solid #fff;
+    border-bottom: 2px solid #fff;
     height: 60px;
     margin-top: 50px;
     margin-left: auto;
@@ -124,7 +125,7 @@ header > .container > .row > h1 > a {
     content: " ";
     width: 100%;
     display: block;
-    border-bottom: 3px solid #fff;
+    border-bottom: 2px solid #fff;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
@@ -136,22 +137,23 @@ header > .container > .row > h1 > a {
     content: "";
     width: 100%;
     display: block;
-    border-bottom: 3px solid #fff;
+    border-bottom: 2px solid #fff;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    bottom: -40px;
+    bottom: -20px;
+    transition: transform 0.3s;
   }
 
   .icon-menu span.active:before {
     transform: rotate(45deg);
-    top: 40px;
+    top: 20px;
     transition: transform 0.3s;
   }
 
   .icon-menu span.active:after {
     transform: rotate(-45deg);
-    bottom: -5px;
+    bottom: -2px;
     transition: transform 0.3s;
   }
 
@@ -217,14 +219,15 @@ header > .container > .row > h1 > a {
     border-bottom: 1px solid white;
   }
 
-  .top-bar > .container > .row {
+  .top-bar > .container > ul {
     background-color: #8AC3A1;
     align-items: center;
+    display: flex;
+    justify-content: space-around;
   }
 
-  .top-bar > .container > .row > .col-3 {
-    margin: 0;
-    width: 25%;
+  .top-bar > .container > ul > li > a {
+    display: flex;
     align-items: center;
   }
 }
@@ -261,14 +264,35 @@ header > .container > .title > h2 {
   color: lightgray;
 }
 
+.top-bar a:hover > .triangle {
+  border-color: transparent transparent transparent lightgray;
+}
+
+.discolor.active {
+  border-color: transparent transparent transparent #ff0101;
+}
+
+.discolor2.active {
+  border-color: transparent transparent transparent #ff0101;
+}
+
+.discolor3.active {
+  border-color: transparent transparent transparent #ff0101;
+}
+
+.discolor4.active {
+  border-color: transparent transparent transparent #ff0101;
+}
+
 @media (max-width: 767px) {
   header > .container > .title > h2 {
     top: 200px;
   }
 
-  .top-bar > .container > .row {
+  .top-bar > .container > ul {
     background-color: #8AC3A1;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
   }
 
   .triangle {

@@ -34,31 +34,35 @@ html(lang="zh-Hant")
                                     img.img-fluid(src="public/images/shopping cart.png", alt="shopping_cart")
         .top-bar
             .container
-                .row
-                    a(href="#a1").col-3.col-md-3.col-lg-3.display-md-flex.justify-content-center
-                        .triangle
-                        .triangle 
-                        .triangle 
-                        .triangle
-                        h3 STEP1
-                    a(href="#a2").col-3.col-md-3.col-lg-3.display-md-flex.justify-content-center
-                        .triangle
-                        .triangle 
-                        .triangle 
-                        .triangle
-                        h3 STEP2
-                    a(href="#a3").col-3.col-md-3.col-lg-3.display-md-flex.justify-content-center
-                        .triangle
-                        .triangle 
-                        .triangle 
-                        .triangle                   
-                        h3 STEP3
-                    a(href="#a4").col-3.col-md-3.col-lg-3.display-md-flex.justify-content-center
-                        .triangle
-                        .triangle 
-                        .triangle 
-                        .triangle
-                        h3 STEP4 
+                ul
+                    li
+                        a(href="#a1")
+                            .triangle.discolor.active
+                            .triangle 
+                            .triangle 
+                            .triangle
+                            h3 STEP1
+                    li
+                        a(href="#a2")
+                            .triangle
+                            .triangle.discolor2 
+                            .triangle 
+                            .triangle
+                            h3 STEP2
+                    li
+                        a(href="#a3")
+                            .triangle
+                            .triangle 
+                            .triangle.discolor3
+                            .triangle                   
+                            h3 STEP3
+                    li
+                        a(href="#a4")
+                            .triangle
+                            .triangle 
+                            .triangle 
+                            .triangle.discolor4
+                            h3 STEP4 
         .container.s1       
                 h2#a1.text-center.margin-top-30.margin-bottom-30 本月行事曆
                 .calendar

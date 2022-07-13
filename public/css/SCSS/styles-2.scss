@@ -69,9 +69,10 @@ header>.container>.row>h1>a{
         width: 100%;
         position: absolute;
         top: 250px;
-        background-color: rgba(0, 0, 0, 0.252);
+        background-color: rgba(0, 0, 0, 0.775);
         margin: 0; 
         display: none;
+        z-index: 1000;
     }
     nav.active{
         display: block;
@@ -117,7 +118,7 @@ header>.container>.row>h1>a{
     .icon-menu  > span{
         width: 50%;
         display: block;
-        border-bottom: 3px solid #fff;
+        border-bottom: 2px solid #fff;
         height: 60px;
         margin-top: 50px;
         // margin-bottom: 10px;
@@ -129,7 +130,7 @@ header>.container>.row>h1>a{
         content:" ";
         width: 100%;
         display: block;
-        border-bottom: 3px solid #fff;
+        border-bottom: 2px solid #fff;
         // margin-bottom: 70px;
         margin-left: auto;
         margin-right: auto;
@@ -141,21 +142,22 @@ header>.container>.row>h1>a{
         content:"";
         width: 100%;
         display: block;
-        border-bottom: 3px solid #fff;
+        border-bottom: 2px solid #fff;
         // margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
         position: absolute;
-        bottom: -40px;
+        bottom: -20px;
+        transition: transform .3s;
     }
     .icon-menu span.active:before{
         transform: rotate(45deg);
-        top: 40px;
+        top: 20px;
         transition: transform .3s;
     }
     .icon-menu span.active:after{
         transform: rotate(-45deg);
-        bottom: -5px;
+        bottom: -2px;
         transition: transform .3s;
     }
     .icon-menu span.active{
@@ -212,15 +214,22 @@ header>.container>.row>h1>a{
         //   padding-bottom: 10px;
           border-bottom: 1px solid rgb(255, 255, 255);
       }
-      .top-bar>.container>.row{
+      .top-bar>.container>ul{
           background-color: #8AC3A1;
           align-items: center;
+          display: flex;
+          justify-content: space-around;   
       }
-      .top-bar>.container>.row>.col-3{
-            margin: 0;
-            width: 25%;
-            align-items: center;
-    }
+      .top-bar>.container>ul>li>a{
+          display: flex;
+          align-items: center;
+          
+      }
+    //   .top-bar>.container>.row>.col-3{
+    //         margin: 0;
+    //         width: 25%;
+    //         align-items: center;
+    // }
     }
     header>.container nav>ul>li>a:hover{
         color: rgb(197, 189, 211);
@@ -251,13 +260,29 @@ header>.container>.title>h2{
 .top-bar a:hover{
     color:lightgray
 }
+.top-bar a:hover>.triangle{
+    border-color: transparent transparent transparent lightgray;
+}
+.discolor.active{
+    border-color: transparent transparent transparent rgb(255, 1, 1);
+}
+.discolor2.active{
+    border-color: transparent transparent transparent rgb(255, 1, 1);
+}
+.discolor3.active{
+    border-color: transparent transparent transparent rgb(255, 1, 1);
+}
+.discolor4.active{
+    border-color: transparent transparent transparent rgb(255, 1, 1);
+}
 @media (max-width:767px) {
     header>.container>.title>h2{
         top:200px
     }
-    .top-bar>.container>.row{
+    .top-bar>.container>ul{
         background-color: #8AC3A1;
-        align-items: center;
+        display: flex;
+        justify-content: space-between;
     }
     .triangle{
         display: none;
